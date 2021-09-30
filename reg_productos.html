@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/reg_pr.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Krub&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="title">
+      <h1 id="title">REGISTRO DE PRODUCTOS</h1>
+    </div>
+    <div class="button-group" role="group" aria-label="Basic example">
+      <a class="btn btn-info btn-space" href="#" role="button"
+        >Pagina Principal</a
+      >
+      <a class="btn btn-info btn-space" href="#" role="button"
+        >Maestro de productos</a
+      >
+      <a class="btn btn-info btn-space" href="#" role="button"
+        >Registrar venta</a
+      >
+      <a class="btn btn-info btn-space" href="#" role="button"
+        >Verificar estado de venta</a
+      >
+      <a class="btn btn-info btn-space" href="#" role="button"
+        >Gestionar usuario</a
+      >
+    </div>
+    <form id="formulario">
+      <div class="form-group row">
+        <label for="identificador" class="col-sm-2 col-form-label"
+          >Identificador</label
+        >
+        <div class="col-sm-2">
+          <input
+            type="id"
+            class="form-control"
+            id="id"
+            placeholder="Identificador" readonly
+          />
+        </div>
+      </div>
+      <br />
+      <div class="form-group row">
+        <label for="Descripcion" class="col-sm-2 col-form-label"
+          >Descripción</label
+        >
+        <div class="col-sm-4">
+          <input
+            type="text"
+            class="form-control"
+            id="descripcion"
+            placeholder="Descripción"
+          />
+        </div>
+      </div>
+      <br />
+      <div class="form-group row">
+        <label for="vunitario" class="col-sm-2 col-form-label"
+          >Valor Unitario</label
+        >
+        <div class="col-sm-2">
+          <input
+            type="input"
+            class="form-control"
+            id="vunitario"
+            placeholder="Valor unitario"
+          />
+        </div>
+      </div>
+      <br />
+      <div class="form-group row">
+        <div class="col-sm-2">Estado</div>
+        <div class="col-sm-10">
+          <div class="form-check">
+            <label class="form-check-label">
+              <input class="form-check-input" type="checkbox" /> Disponible
+              <br />
+              <input class="form-check-input" type="checkbox" /> No Disponible
+            </label>
+          </div>
+        </div>
+      </div><br>
+      <div class="form-group row">
+        <div class="col-sm-10">
+          <button type="submit" class="btn btn-info" id="Registrar">Registrar producto</button>
+          <button type="reset" class="btn btn-info">Borrar datos</button>
+        </div>
+      </div>
+    </form>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+  <script src="js/reg_pr.js"></script>
+</html>

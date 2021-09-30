@@ -1,0 +1,27 @@
+*{
+    font-family: 'Krub', sans-serif;
+    background-color: #fefbf3;
+}
+
+#title{
+    text-align: center;
+    font-size: 35px;
+    margin: 0;
+    padding-top: 5px;
+}
+
+.button-group{
+    display: flex;
+    justify-content: center;
+    padding: 10px
+    
+}
+
+.btn-space {
+    margin-right: 15px;
+}
+
+#formulario{
+    padding: 20px;
+    
+}
