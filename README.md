@@ -15,3 +15,5 @@ Owner: Carlos Camargo
 
 Notas: 
 29/09/2021: Creación de archivo html y css para establecimiento estilos. Se planea tener un menú que permita navegar a las otras interfaces
+
+Cambios de botones. Se usará navbar de BS.

@@ -7,22 +7,25 @@
 
 #title{
     text-align: center;
-    font-size: 35px;
-    margin: 0;
-    padding-top: 5px;
+    font-size: 30px;
+       
 }
 
-.button-group{
+#ulnavbar{
+    background-color:#4B3869;
+}
+
+/* .container-fluid{
     display: flex;
     justify-content: center;
     padding: 10px
     
-}
+} */
 
-.btn-space {
-    margin-right: 15px;
-}
 
 #formulario{
-    padding: 20px;    
+    padding: 10px;    
 }
+
+
+
