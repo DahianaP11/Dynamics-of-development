@@ -1,0 +1,25 @@
+*{
+    background-color:#fefbf3;
+    font-family: 'Krub', sans-serif;
+    
+}
+
+
+
+#nav1,#nav2,#nav3,#nav4,#nav5,.btn-space {
+    background-color:#4B3869;
+    color:#fefbf3;
+    
+}
+
+h1{
+    text-align:center;
+    font-size: 28px;    
+}
+
+a{
+    transition: background-color .5s;
+}
+a:hover {
+    background-color: gold;
+}

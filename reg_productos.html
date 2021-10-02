@@ -11,7 +11,9 @@
       integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css/reg_pr.css" />
+
+    <!--<link rel="stylesheet" href="css/Normalyze.css" />-->
+    <link rel="stylesheet" href="css/regproduc.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,94 +22,89 @@
     />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">        
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav" id="ulnavbar">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Maestro de productos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Registrar venta</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Verificar estado de venta</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Gestionar usuario</a>
-            </li>
-          </ul>
-        </div>
-      </div>
+    <nav class="nav nav-pill nav-fill" id="navbar">
+      <a class="nav-link active" aria-current="page" href="#" id="nav1"
+        >Inicio</a
+      >
+      <a class="nav-link active" href="#" id="nav2">Maestro de productos</a>
+      <a class="nav-link active" href="#" id="nav3">Registrar venta</a>
+      <a class="nav-link active" href="#" id="nav4"
+        >Verificar estado de venta</a
+      >
+      <a class="nav-link active" href="#" id="nav5">Gestionar usuario</a>
     </nav>
-    <div class="title">
+    <div>
       <h1 id="title">REGISTRO DE PRODUCTOS</h1>
-    </div>
-    <form id="formulario">
-      <div class="form-group row">
-        <label for="identificador" class="col-sm-2 col-form-label"
-          >Identificador</label
-        >
-        <div class="col-sm-2">
-          <input
-            type="id"
-            class="form-control"
-            id="id"
-            placeholder="Identificador" readonly
-          />
-        </div>
-      </div>
-      <br />
-      <div class="form-group row">
-        <label for="Descripcion" class="col-sm-2 col-form-label"
-          >Descripción</label
-        >
-        <div class="col-sm-4">
-          <input
-            type="text"
-            class="form-control"
-            id="descripcion"
-            placeholder="Descripción"
-          />
-        </div>
-      </div>
-      <br />
-      <div class="form-group row">
-        <label for="vunitario" class="col-sm-2 col-form-label"
-          >Valor Unitario</label
-        >
-        <div class="col-sm-2">
-          <input
-            type="input"
-            class="form-control"
-            id="vunitario"
-            placeholder="Valor unitario"
-          />
-        </div>
-      </div>
-      <br />
-      <div class="form-group row">
-        <div class="col-sm-2">Estado</div>
-        <div class="col-sm-10">
-          <div class="form-check">
-            <label class="form-check-label">
-              <input class="form-check-input" type="checkbox" /> Disponible
-              <br />
-              <input class="form-check-input" type="checkbox" /> No Disponible
-            </label>
+
+      <form id="formulario">
+        <div class="form-group row">
+          <label for="identificador" class="col-sm-2 col-form-label"
+            >Identificador</label
+          >
+          <div class="col-sm-2">
+            <input
+              type="id"
+              class="form-control"
+              id="id"
+              placeholder="Identificador"
+              readonly
+            />
           </div>
         </div>
-      </div><br>
-      <div class="form-group row">
-        <div class="col-sm-10">
-          <button type="submit" class="btn btn-info btn-space" id="Registrar">Registrar producto</button>
-          <button type="reset" class="btn btn-info btn-space">Borrar datos</button>
+        <br />
+        <div class="form-group row">
+          <label for="Descripcion" class="col-sm-2 col-form-label"
+            >Descripción</label
+          >
+          <div class="col-sm-4">
+            <input
+              type="text"
+              class="form-control"
+              id="descripcion"
+              placeholder="Descripción"
+            />
+          </div>
         </div>
-      </div>
-    </form>
+        <br />
+        <div class="form-group row">
+          <label for="vunitario" class="col-sm-2 col-form-label"
+            >Valor Unitario</label
+          >
+          <div class="col-sm-2">
+            <input
+              type="input"
+              class="form-control"
+              id="vunitario"
+              placeholder="Valor unitario"
+            />
+          </div>
+        </div>
+        <br />
+        <div class="form-group row">
+          <div class="col-sm-2">Estado</div>
+          <div class="col-sm-10">
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" /> Disponible
+                <br />
+                <input class="form-check-input" type="checkbox" /> No Disponible
+              </label>
+            </div>
+          </div>
+        </div>
+        <br />
+        <div class="form-group row">
+          <div class="col-sm-12">
+            <button type="submit" class="btn btn-space" id="Registrar">
+              Registrar producto
+            </button>
+            <button type="reset" class="btn btn-space">
+              Borrar datos
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script
@@ -117,5 +114,4 @@
     ></script>
     <script src="js/reg_pr.js"></script>
   </body>
-  
 </html>
