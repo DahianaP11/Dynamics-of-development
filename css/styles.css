@@ -1,0 +1,95 @@
+/*Utilidades*/
+body{
+    font-family: 'Krub', sans-serif;
+    font-weight: 400;
+}
+h1{
+    font-weight: 700;
+}
+.center{
+    text-align: center;
+    align-content: center;
+    align-items: center ;
+}
+/*Ya esto es el body*/
+#heading { 
+    color: #000000;
+    font-family: Krub;
+    font-size:  45px; 
+}
+/*barra de navegación*/
+.form-control{
+  font-size: 15px;
+  color:#292929;
+  background : #FFFFFF;
+  position : relative;
+  border-radius : 10px;
+  -moz-border-radius : 10px;
+  -webkit-border-radius : 10px;
+ }
+/*botón buscar de la barra*/
+.btn-outline-success{
+  font-size: 15px;
+  color:#ffffff;
+  border-color: rgb(25, 0, 66);
+  background : #4B3869;
+  position : relative;
+  border-radius : 10px;
+}
+.btn-outline-success:hover {
+  background-color: #b0c2fb;
+  color: rgb(0, 0, 0);
+}
+/*Botones*/
+#button2 {
+  background : #4B3869;
+  color: aliceblue;
+  font-size: 18px;
+  position : relative ;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  border-radius : 10px;
+  -moz-border-radius : 10px;
+  -webkit-border-radius : 10px;
+}
+
+#button2:hover {
+ background-color: #b0c2fb;
+ color: rgb(0, 0, 0);
+}
+
+#button3, .btn {
+  background : #4B3869;
+  color: aliceblue;
+  font-size: 18px;
+  border-radius : 10px;
+  padding: 7px; 
+  -moz-border-radius : 10px;
+  -webkit-border-radius : 10px;
+  border-color: rgba(0, 0, 0, 0%);;
+  stroke: white;
+}
+#button3:hover,.btn:hover {
+  background-color: #b0c2fb;
+  color: rgb(0, 0, 0);
+  border-color: rgba(0, 0, 0, 0%);;
+  stroke: black;
+}
+
+/*Editar tabla*/
+tbody, td, tfoot, th, thead, tr{
+    border-color: #4B3869;
+    border-style: groove;
+    border-width: .5px;
+}
+button, .edit-button{
+    border-color: rgba(0, 0, 0, 0%);
+    background-color: rgba(0, 0, 0, 0%);
+}
+.end-buttons{
+    display: inline-block;
+    vertical-align: top;
+}
+.btn-padding{
+    padding: 10px;
+}
