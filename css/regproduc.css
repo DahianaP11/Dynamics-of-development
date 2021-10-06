@@ -1,10 +1,6 @@
 *{
-    background-color:#fefbf3;
-    font-family: 'Krub', sans-serif;
-    
+   font-family: 'Krub', sans-serif;    
 }
-
-
 
 #nav1,#nav2,#nav3,#nav4,#nav5,.btn-space {
     background-color:#4B3869;
@@ -17,9 +13,32 @@ h1{
     font-size: 28px;    
 }
 
-a{
+#icono_usuario{
+    color: #fff;
+    font-size: 23px;
+}
+
+/*Barra de navegación*/
+
+/* .menu_navegacion{
+    width: 500px;
+} */
+
+.menu_usuario, li a:hover{
+    color: #fff;
+    text-decoration: none;
+}
+
+/* #menu_principal{
+    width: 700px;
+} */
+
+/* a {
+    
     transition: background-color .5s;
-}
-a:hover {
-    background-color: gold;
-}
+  }
+  
+  a:hover {
+    background-color: rgb(104, 143, 170);
+  } */
+
