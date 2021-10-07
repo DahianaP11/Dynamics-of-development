@@ -2,11 +2,6 @@
    font-family: 'Krub', sans-serif;    
 }
 
-#nav1,#nav2,#nav3,#nav4,#nav5,.btn-space {
-    background-color:#4B3869;
-    color:#fefbf3;
-    
-}
 
 h1{
     text-align:center;
@@ -17,6 +12,18 @@ h1{
     color: #fff;
     font-size: 23px;
 }
+
+/* #button{
+    display:inline-block;
+    position: absolute;
+    bottom:4em;
+    right:4em;
+    background-color:#3a0652c7;
+    border-radius:1.5em;
+    color:white;
+    text-transform:uppercase;
+    padding:1em 1.5em;
+} */
 
 /*Barra de navegación*/
 
@@ -41,4 +48,16 @@ h1{
   a:hover {
     background-color: rgb(104, 143, 170);
   } */
+
+  #Registrar,#Borrar{
+    background-color:#3a0652c7;
+    color: #fff;
+  }
+
+  #formulario,#identificadorP{
+      font-size: 14px;
+  }
+
+
+
 
