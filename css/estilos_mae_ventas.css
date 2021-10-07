@@ -1,11 +1,31 @@
-.container{
-    border: 1px solid green;
+/* li a:hover{  
+    border-bottom: 1px solid;
+} */
+
+#icono_usuario{
+    color: #fff;
+    font-size: 23px;
 }
 
-.row{
-    border: 2px solid black;
+.color_usuario{
+    color: #fff;
 }
 
-.row>*{
-    border: 1px solid red;
+.barra_busqueda{
+    width: 400px;
+}
+
+
+.menu{
+    width: 700px;
+}
+
+.link_dropwdown, li a{
+    text-decoration: underline;
+    color: #fff;
+}
+
+.menu_dropdown{
+    text-decoration: none;
+    color: #fff;
 }
