@@ -1,31 +1,27 @@
-/* li a:hover{  
-    border-bottom: 1px solid;
-} */
+/*Menú principal, links*/
+#menu_principal a:hover{
+border-bottom: 1px solid;
+} 
 
+/*Icono de usuario*/
 #icono_usuario{
     color: #fff;
     font-size: 23px;
 }
 
-.color_usuario{
-    color: #fff;
-}
-
+/* Barra de búsqueda */
 .barra_busqueda{
     width: 400px;
 }
 
-
+/*Ancho Menú de barra de navegación*/
 .menu{
     width: 700px;
 }
 
-.link_dropwdown, li a{
-    text-decoration: underline;
-    color: #fff;
-}
-
-.menu_dropdown{
+/*Botón dropwdown de usuario*/
+#boton_dropdown{
     text-decoration: none;
-    color: #fff;
+    
+    
 }
