@@ -24,10 +24,10 @@ function myFunction()
    
    document.getElementById("Nodisp").disabled = false;
    document.getElementById("disp").disabled = false;
-   document.getElementById("disp").checked = false
-   document.getElementById("Nodisp").checked = false
+   document.getElementById("disp").checked = false;
+   document.getElementById("Nodisp").checked = false;
 
-   if(document.getElementById("disp").checked)
+   if(document.getElementById("disp").checked==true)
    {
       document.getElementById("Nodisp").disabled = true;
       document.getElementById("disp").disabled = false;

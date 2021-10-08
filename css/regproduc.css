@@ -1,16 +1,15 @@
-*{
-   font-family: 'Krub', sans-serif;    
+* {
+  font-family: "Krub", sans-serif;
 }
 
-
-h1{
-    text-align:center;
-    font-size: 28px;    
+#title {
+  text-align: center;
+  font-size: 40px;
 }
 
-#icono_usuario{
-    color: #fff;
-    font-size: 23px;
+#icono_usuario {
+  color: #fff;
+  font-size: 23px;
 }
 
 /* #button{
@@ -31,9 +30,10 @@ h1{
     width: 500px;
 } */
 
-.menu_usuario, li a:hover{
-    color: #fff;
-    text-decoration: none;
+.menu_usuario,
+li a:hover {
+  color: #fff;
+  text-decoration: none;
 }
 
 /* #menu_principal{
@@ -44,64 +44,71 @@ h1{
     
     transition: background-color .5s;
   }*/
-  
-  #menu_principal a:hover {
-    border-bottom: 1px solid;
-  } 
 
-  #Registrar{
-    background-color:#3a0652c7;
-    color: #fff;
-    height:1cm;
-    width:3.94cm;
-    font-size: 14px;
-    transition: background-color .5s;    
-  }
+#menu_principal a:hover {
+  border-bottom: 1px solid;
+}
 
-  #Borrar{
-    background-color:#3a0652c7;
-    color: #fff;
-    height:1cm;
-    width:2.9cm;
-    font-size: 14px;
-    transition: background-color .5s;
-  }
+#Registrar {
+  background-color: #3a0652c7;
+  color: #fff;
+  height: 1cm;
+  width: 3.94cm;
+  font-size: 14px;
+  transition: background-color 0.5s;
+}
 
-  #Registrar:hover{
-    background-color: rgb(104, 143, 170);
-  }
+#Borrar {
+  background-color: #3a0652c7;
+  color: #fff;
+  height: 1cm;
+  width: 2.9cm;
+  font-size: 14px;
+  transition: background-color 0.5s;
+}
 
-  #Borrar:hover{
-    background-color: rgb(104, 143, 170);
-  }
+#Registrar:hover {
+  background-color: rgb(104, 143, 170);
+}
 
-  #descripcion{
-      font-size: 14px;
-      box-sizing: content-box;
-      height:50%;
-      width:100%;
-  }
+#Borrar:hover {
+  background-color: rgb(104, 143, 170);
+}
 
-  #vunitario{
-    font-size: 14px;
-    box-sizing: content-box;
-    height:30%;
-    width:160%;
-  }
+#descripcion {
+  font-size: 14px;
+  box-sizing: content-box;
+  height: 50%;
+  width: 160%;
+}
 
-  #identificadorP{
-    font-size: 14px;
-    box-sizing: content-box;
-    height:50%;
-    width:60%;
+#vunitario {
+  font-size: 14px;
+  box-sizing: content-box;
+  height: 30%;
+  width: 160%;
+}
 
-  }
+#identificadorP {
+  font-size: 14px;
+  box-sizing: content-box;
+  height: 50%;
+  width: 62%;
+}
 
-  #menu_principal{
-      font-size: 14px;
-      padding-right:2px;
-  }
+#menu_principal {
+  font-size: 14px;
+  padding-right: 2px;
+}
 
+/* .table {
+  border-color: #aaaaaa;
+  border-width: 1px;
+  border-style: solid;
+}
 
-
-
+.col-6{
+  border-color: #aaaaaa;
+  border-width: 1px;
+  border-style: solid;
+} */
