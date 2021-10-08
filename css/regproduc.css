@@ -75,7 +75,7 @@ h1{
     background-color: rgb(104, 143, 170);
   }
 
-  #formulario,#identificadorP,#descripcion{
+  #descripcion{
       font-size: 14px;
       box-sizing: content-box;
       height:50%;
@@ -83,8 +83,18 @@ h1{
   }
 
   #vunitario{
+    font-size: 14px;
+    box-sizing: content-box;
+    height:30%;
+    width:160%;
+  }
+
+  #identificadorP{
+    font-size: 14px;
+    box-sizing: content-box;
     height:50%;
-    width:200%;
+    width:60%;
+
   }
 
   #menu_principal{
