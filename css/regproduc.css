@@ -43,19 +43,53 @@ h1{
 /* a {
     
     transition: background-color .5s;
-  }
+  }*/
   
-  a:hover {
-    background-color: rgb(104, 143, 170);
-  } */
+  #menu_principal a:hover {
+    border-bottom: 1px solid;
+  } 
 
-  #Registrar,#Borrar{
+  #Registrar{
     background-color:#3a0652c7;
     color: #fff;
+    height:1cm;
+    width:3.94cm;
+    font-size: 14px;
+    transition: background-color .5s;    
   }
 
-  #formulario,#identificadorP{
+  #Borrar{
+    background-color:#3a0652c7;
+    color: #fff;
+    height:1cm;
+    width:2.9cm;
+    font-size: 14px;
+    transition: background-color .5s;
+  }
+
+  #Registrar:hover{
+    background-color: rgb(104, 143, 170);
+  }
+
+  #Borrar:hover{
+    background-color: rgb(104, 143, 170);
+  }
+
+  #formulario,#identificadorP,#descripcion{
       font-size: 14px;
+      box-sizing: content-box;
+      height:50%;
+      width:100%;
+  }
+
+  #vunitario{
+    height:50%;
+    width:200%;
+  }
+
+  #menu_principal{
+      font-size: 14px;
+      padding-right:2px;
   }
 
 

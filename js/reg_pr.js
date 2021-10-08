@@ -1,5 +1,3 @@
-
-
 document.getElementById("Registrar").onclick = muestraMensaje;
 
 function muestraMensaje() {
@@ -12,18 +10,42 @@ function makeid(){
    var charactersLength = characters.length;
    for ( var i = 0; i < 9; i++ ) {
       result += characters.charAt(Math.floor(Math.random() * charactersLength));      
-   }
-      
-      
-   document.getElementById("identificadorP").readonly = false;   
+   }       
+   
+   //document.getElementById("identificadorP").setAttribute('identificadorP',result);     
    document.getElementById('identificadorP').value=result;
-   document.getElementById("identificadorP").readonly = true;
-   
-   
-   
+   // document.getElementById("identificadorP").disabled = true;  
    
    // return result;
 }
+
+function myFunction() 
+{
+   
+   document.getElementById("Nodisp").disabled = false;
+   document.getElementById("disp").disabled = false;
+   document.getElementById("disp").checked = false
+   document.getElementById("Nodisp").checked = false
+
+   if(document.getElementById("disp").checked)
+   {
+      document.getElementById("Nodisp").disabled = true;
+      document.getElementById("disp").disabled = false;
+   }
+    else
+   {
+      document.getElementById("Nodisp").disabled = false;
+      document.getElementById("disp").disabled = true;
+      
+   }
+}
+
+makeid();
+myFunction();
+
+
+
+
 
 
 
