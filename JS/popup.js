@@ -10,3 +10,16 @@ btnAbrirPopup.addEventListener('click', function(){
 btnCerrarPopup.addEventListener('click', function(){
     overlay.classList.remove('active');
 });
+
+
+document.getElementById("actualizar1").onclick = muestraMensaje;
+
+function muestraMensaje() {
+    alert('Se ha actualizado el rol exitosamente');
+}
+
+document.getElementById("actualizar2").onclick = muestraMensajeDos;
+
+function muestraMensajeDos() {
+    alert('Se ha actualizado el estado exitosamente');
+}
