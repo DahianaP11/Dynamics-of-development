@@ -19,19 +19,17 @@
     <!-- Iconos CSS Fontawesome -->
     <link rel="stylesheet" type="text/css" href="fontawesome/css/all.css">  
     
-    <title>Barra de navegación</title>
+    <title>Gestionar ventas</title>
 
 </head>
 
-<body>
+<body id="body">
 
     <!-- Barra de navegación -->
+    
+    <nav class="navbar navbar-dark navbar-expand-md pb-0 border border-light" style="background-color: #3a0652c7">
 
-    <nav class="navbar navbar-dark navbar-expand-md pb-0 border border-light border" style="background-color: #3a0652c7">
-
-      <div class="container row p-md-0 d-flex justify-content-md-between">
-
-        
+      <div class="container row  d-flex justify-content-md-between">
 
           <!-- Logo -->
           <div class="col-4 col-md-1 ps-5 pb-2">
@@ -47,27 +45,27 @@
 
           <!-- Lista: Menú -->
           <div class="col-md-11 ps-5 d-flex flex-md-row-reverse">
-              <div class="collapse navbar-collapse"  id="menu_principal">
-                  <ul class="navbar-nav">
-                      <li class="nav-item"><a class="nav-link active text-uppercase" href="#">Inicio</a></li>
-                      <li class="nav-item"><a class="nav-link text-uppercase" href="#">Registrar venta</a></li>
-                      <li class="nav-item"><a class="nav-link text-uppercase" href="#">Gestionar de ventas</a></li>
-                      <li class="nav-item"><a class="nav-link text-uppercase " href="#">Registrar producto</a></li>
-                      <li class="nav-item"><a class="nav-link text-uppercase" href="#">Gestionar de productos</a></li>
-                      <li class="nav-item"><a class="nav-link disabled text-uppercase " href="#" tabindex="-1" aria-disabled="true">Maestro de usuario</a></li>
-                  </ul>
-              </div>
-          </div>
+            <div class="collapse navbar-collapse"  id="menu_principal">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active text-uppercase" href="#">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link text-uppercase" href="#">Registrar venta</a></li>
+                    <li class="nav-item"><a class="nav-link text-uppercase" href="#">Gestionar de ventas</a></li>
+                    <li class="nav-item"><a class="nav-link text-uppercase " href="#">Registrar producto</a></li>
+                    <li class="nav-item"><a class="nav-link text-uppercase" href="#">Gestionar de productos</a></li>
+                    <li class="nav-item"><a class="nav-link disabled text-uppercase " href="#" tabindex="-1" aria-disabled="true">Maestro de usuario</a></li>
+                </ul>
+            </div>
+        </div>
         
           <!-- Icono de usuario y Dropdown para salir -->
-          <div class="col-sm-2 col-md-2 d-flex justify-content-md-start border-start ">
-              <div class="dropdown link_dropwdown" id="boton_dropdown">
+          <div class="col-sm-2 col-md-2 d-flex justify-content-md-end ">
+              <div class="dropdown link_dropwdown border-start" id="boton_dropdown">
                   <!-- Icono -->
                   <a class="btn btn btn-link dropdown-toggle menu_usuario" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                       <i class="fas fa-user-alt" id="icono_usuario"></i>
                   </a>
                   <!-- Dropdown -->
-                  <ul class="dropdown-menu">
+                  <ul class="dropdown-menu ">
                       <li><p class="text-center">Hola, Andrés</p></li>
                       <li><hr class="dropdown-divider"></li>
                       <li><a class="dropdown-item text-center" href="#">Salir</a></li>
@@ -84,12 +82,17 @@
 
 
   <div class="container row">
+    
+    <!-- Texto de inicio -->
+    <div class="col-12 m-3  ps-5">
+        <h1 class="text-center fs-1" id="texto_inicio">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp;  Gesti&oacute;n de ventas</h1>
+    </div>
 
     <!-- Columna de búqueda -->
       <div class="col-md-12 m-4">
           <form class="d-flex">
               <input class="form-control me-2 barra_busqueda" type="search" placeholder="Ingrese un ID de venta, nombre o C.C. del cliente" aria-label="Search">
-              <button class="btn btn-outline-primary" type="submit">Buscar</button>
+              <button class="btn btn-outline-primary boton_buscar" type="submit">Buscar</button>
           </form>
       </div>
 
@@ -106,6 +109,7 @@
               <h5 class="modal-title" id="exampleModalLabel">Editar venta</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
+              <!-- Formulario -->
               <div class="modal-body">
                   <form>
                       <div class="mb-3">
@@ -114,50 +118,65 @@
                         <div class="form-text">Este campo no es posible editar</div>
                       </div>
                       <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Fecha de venta</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1">
+                        <label for="exainput" class="form-label">Fecha de venta</label>
+                        <input type="date" class="form-control">
                       </div>
                       <div class="mb-3">
-                          <label for="exampleInputEmail1" class="form-label">ID Producto</label>
-                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          <label for="input" class="form-label">ID Producto</label>
+                          <input type="text" class="form-control" >
                       </div>
                       <div class="mb-3">
-                          <label for="exampleInputEmail1" class="form-label">Precio unitario</label>
-                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          <label for="input" class="form-label">Precio unitario</label>
+                          <input type="text" class="form-control" >
                       </div>
                       <div class="mb-3">
-                          <label for="exampleInputEmail1" class="form-label">Cantidad</label>
-                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          <label for="input" class="form-label">Cantidad</label>
+                          <input type="number" class="form-control" >
                       </div>
                       <div class="mb-3">
-                          <label for="exampleInputEmail1" class="form-label">Valor total de la venta</label>
-                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          <label for="input" class="form-label">Valor total de la venta</label>
+                          <input type="text" class="form-control" >
                       </div>
                       <div class="mb-3">
-                          <label for="exampleInputEmail1" class="form-label">Nombre del cliente</label>
-                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          <label for="input" class="form-label">Nombre del cliente</label>
+                          <input type="text" class="form-control" >
                       </div>
                       <div class="mb-3">
-                          <label for="exampleInputEmail1" class="form-label">Cédula</label>
-                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          <label for="input" class="form-label">Cédula</label>
+                          <input type="text" class="form-control" >
                       </div>
                       <div class="mb-3">
-                          <label for="exampleInputEmail1" class="form-label">Vendedor</label>
-                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          <label for="input" class="form-label">Vendedor</label>
+                          <input type="text" class="form-control">
                       </div>
                       <div class="mb-3">
-                          <label for="exampleInputEmail1" class="form-label">Estado de la venta</label>
-                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          <label for="input" class="form-label">Estado de la venta</label>
+                          <br>
+                          <select class="custom-select estado">
+                            <option selected>Elija una opci&oacute;n</option>
+                            <option value="1">Proceso</option>
+                            <option value="2">Cancelada</option>
+                            <option value="3">Entregada</option>
+                          </select>
                       </div>
                       
                     </form>
               </div>
               <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-              <button type="button" class="btn btn-primary">Guardar cambios</button>
+              <button type="button" class="btn btn-secondary " data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-primary boton_formulario_2" data-bs-toggle="collapse" href="#confirmacion">Guardar cambios</button>
+            
+              <!-- Confirmación de los cambios en el formulario-->
+              <div class="collapse" id="confirmacion">
+                <div class="alert alert-success" role="alert">
+                    <p>¡Sus cambios han sido guardados con éxito!</p>
+                </div>
+              
               </div>
+              
+            </div>
           </div>
-          </div>
+        </div>
       </div>
 
   </div>
@@ -166,7 +185,7 @@
    <div class="col-11 m-5 border">
       <table class="table table-striped table-hover tabla">
           <thead>
-            <tr>
+            <tr class="text-left">
               <th scope="col">ID de venta</th>
               <th scope="col">Fecha de venta</th>
               <th scope="col">ID del producto</th>
@@ -229,9 +248,9 @@
               <td>Entregado</td>
             </tr>
             
-          </tbody>
-        </table>
-  </div>
+        </tbody>
+      </table>
+</div>
 
   
 
