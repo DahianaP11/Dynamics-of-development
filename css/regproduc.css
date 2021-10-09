@@ -1,0 +1,114 @@
+* {
+  font-family: "Krub", sans-serif;
+}
+
+#title {
+  text-align: center;
+  font-size: 40px;
+}
+
+#icono_usuario {
+  color: #fff;
+  font-size: 23px;
+}
+
+/* #button{
+    display:inline-block;
+    position: absolute;
+    bottom:4em;
+    right:4em;
+    background-color:#3a0652c7;
+    border-radius:1.5em;
+    color:white;
+    text-transform:uppercase;
+    padding:1em 1.5em;
+} */
+
+/*Barra de navegación*/
+
+/* .menu_navegacion{
+    width: 500px;
+} */
+
+.menu_usuario,
+li a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* #menu_principal{
+    width: 700px;
+} */
+
+/* a {
+    
+    transition: background-color .5s;
+  }*/
+
+#menu_principal a:hover {
+  border-bottom: 1px solid;
+}
+
+#Registrar {
+  background-color: #3a0652c7;
+  color: #fff;
+  height: 1cm;
+  width: 3.94cm;
+  font-size: 14px;
+  transition: background-color 0.5s;
+}
+
+#Borrar {
+  background-color: #3a0652c7;
+  color: #fff;
+  height: 1cm;
+  width: 2.9cm;
+  font-size: 14px;
+  transition: background-color 0.5s;
+}
+
+#Registrar:hover {
+  background-color: rgb(104, 143, 170);
+}
+
+#Borrar:hover {
+  background-color: rgb(104, 143, 170);
+}
+
+#descripcion {
+  font-size: 14px;
+  box-sizing: content-box;
+  height: 50%;
+  width: 160%;
+}
+
+#vunitario {
+  font-size: 14px;
+  box-sizing: content-box;
+  height: 30%;
+  width: 160%;
+}
+
+#identificadorP {
+  font-size: 14px;
+  box-sizing: content-box;
+  height: 50%;
+  width: 62%;
+}
+
+#menu_principal {
+  font-size: 14px;
+  padding-right: 2px;
+}
+
+/* .table {
+  border-color: #aaaaaa;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.col-6{
+  border-color: #aaaaaa;
+  border-width: 1px;
+  border-style: solid;
+} */
