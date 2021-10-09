@@ -19,29 +19,24 @@ function makeid(){
    // return result;
 }
 
-function myFunction() 
-{
-   
-   document.getElementById("Nodisp").disabled = false;
-   document.getElementById("disp").disabled = false;
-   document.getElementById("disp").checked = false;
-   document.getElementById("Nodisp").checked = false;
+function disponibleClick(){
+   document.getElementById("Nodisp").disabled = true;
 
-   if(document.getElementById("disp").checked==true)
-   {
-      document.getElementById("Nodisp").disabled = true;
-      document.getElementById("disp").disabled = false;
-   }
-    else
-   {
+   if (document.getElementById("disp").checked==false){
       document.getElementById("Nodisp").disabled = false;
-      document.getElementById("disp").disabled = true;
-      
    }
 }
 
+function NodispClick(){
+   document.getElementById("disp").disabled = true;
+   if (document.getElementById("Nodisp").checked==false){
+      document.getElementById("disp").disabled = false;
+   }
+}
+
+
 makeid();
-myFunction();
+
 
 
 
