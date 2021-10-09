@@ -98,7 +98,7 @@
 
       <!-- Columna de  botón editar-->
       <div class="col-12 mx-4">
-          <button type="button border" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Editar</button>
+          <button type="button" class="btn btn-outline-success boton_editar" data-bs-toggle="modal" data-bs-target="#exampleModal">Editar</button>
       </div>
       
       <!-- Modal -->
@@ -113,44 +113,44 @@
               <div class="modal-body">
                   <form>
                       <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">ID Venta</label>
+                        <label for="inputIDVentas" class="form-label">ID Venta</label>
                         <input class="form-control" id="disabledInput" type="text" placeholder="23123" disabled>
                         <div class="form-text">Este campo no es posible editar</div>
                       </div>
                       <div class="mb-3">
-                        <label for="exainput" class="form-label">Fecha de venta</label>
+                        <label for="inputFechaVenta" class="form-label">Fecha de venta</label>
                         <input type="date" class="form-control">
                       </div>
                       <div class="mb-3">
-                          <label for="input" class="form-label">ID Producto</label>
+                          <label for="inputIDProducto" class="form-label">ID Producto</label>
                           <input type="text" class="form-control" >
                       </div>
                       <div class="mb-3">
-                          <label for="input" class="form-label">Precio unitario</label>
+                          <label for="inputPrecioUnitario" class="form-label">Precio unitario</label>
                           <input type="text" class="form-control" >
                       </div>
                       <div class="mb-3">
-                          <label for="input" class="form-label">Cantidad</label>
+                          <label for="inputCantidad" class="form-label">Cantidad</label>
                           <input type="number" class="form-control" >
                       </div>
                       <div class="mb-3">
-                          <label for="input" class="form-label">Valor total de la venta</label>
+                          <label for="inputTotalVenta" class="form-label">Valor total de la venta</label>
                           <input type="text" class="form-control" >
                       </div>
                       <div class="mb-3">
-                          <label for="input" class="form-label">Nombre del cliente</label>
+                          <label for="inputCliente" class="form-label">Nombre del cliente</label>
                           <input type="text" class="form-control" >
                       </div>
                       <div class="mb-3">
-                          <label for="input" class="form-label">Cédula</label>
+                          <label for="inputCedula" class="form-label">Cédula</label>
                           <input type="text" class="form-control" >
                       </div>
                       <div class="mb-3">
-                          <label for="input" class="form-label">Vendedor</label>
+                          <label for="inputVendedor" class="form-label">Vendedor</label>
                           <input type="text" class="form-control">
                       </div>
                       <div class="mb-3">
-                          <label for="input" class="form-label">Estado de la venta</label>
+                          <label for="inputEstado" class="form-label">Estado de la venta</label>
                           <br>
                           <select class="custom-select estado">
                             <option selected>Elija una opci&oacute;n</option>
@@ -163,7 +163,7 @@
                     </form>
               </div>
               <div class="modal-footer">
-              <button type="button" class="btn btn-secondary " data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
               <button type="button" class="btn btn-primary boton_formulario_2" data-bs-toggle="collapse" href="#confirmacion">Guardar cambios</button>
             
               <!-- Confirmación de los cambios en el formulario-->

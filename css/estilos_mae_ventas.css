@@ -94,9 +94,21 @@ border-bottom: 1px solid;
 }
 
 
+/* Botón editar */
+
+.boton_editar, .btn-outline-success:hover{
+    color: #ffffff;
+    border-color: #45868b;
+    background-color: #63B4BB !important;
+    transition: background-color .5s
+}
 
 
-
+.boton_editar, .btn-outline-success:visited{
+    color: #376e72;
+    border-color: #45868b;
+    background-color: #ffffffc4 !important;
+}
 
 
 
