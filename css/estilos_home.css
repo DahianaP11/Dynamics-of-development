@@ -1,0 +1,67 @@
+*{
+    font-family: 'Krub', sans-serif; 
+    font-size: 15px;   
+ }
+
+ /*Menú principal, links*/
+#menu_principal a:hover{
+border-bottom: 1px solid;
+}
+
+/*Icono de usuario*/
+#icono_usuario{
+    color: #fff;
+    font-size: 23px;
+}
+
+/*Ancho Menú de barra de navegación*/
+.menu{
+    width: 700px;
+}
+
+/* Body */
+#body{
+    background-color: #fffdf9e5;;
+}
+
+/*Botón usuario*/
+.menu_usuario, .btn-link:visited{
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu_usuario, .btn-link:hover{
+    color: rgb(255, 255, 255);
+}
+
+/* Carrusel */
+#img_carru_1{
+    width: 100%;
+    height: 560px;
+}
+
+/* #img_carru_3{
+    width: 100%;
+    height: 561px;
+} */
+
+
+#img_carru_4{
+    width: 100%;
+    height: 561px;
+}
+
+
+/* Links */
+
+#link_reg_ventas {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+
+#link_reg_pro{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
