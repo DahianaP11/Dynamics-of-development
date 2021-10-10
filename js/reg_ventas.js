@@ -1,8 +1,10 @@
 document.getElementById("Registrarv").onclick = muestraMensaje;
 
-function muestraMensaje() {
-    alert('Venta registrada exitosamente');
-  }
+function muestraMensaje() {    
+      alert('Venta registrada exitosamente'); 
+          
+    }
+  
 
 function makeid(){   
    var result           = '';
@@ -19,23 +21,18 @@ function makeid(){
    // return result;
 }
 
-// function disponibleClick(){
-//    document.getElementById("Nodisp").disabled = true;
+function vTotal(){
+   var resultado=0;
+   resultado=document.getElementById("Cantidad").value*document.getElementById("vunitario").value;
 
-//    if (document.getElementById("disp").checked==false){
-//       document.getElementById("Nodisp").disabled = false;
-//    }
-// }
+   document.getElementById('vtVenta').value=resultado;
+}
 
-// function NodispClick(){
-//    document.getElementById("disp").disabled = true;
-//    if (document.getElementById("Nodisp").checked==false){
-//       document.getElementById("disp").disabled = false;
-//    }
-// }
+
 
 
 makeid();
+
 
 
 
