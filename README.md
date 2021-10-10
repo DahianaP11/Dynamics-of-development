@@ -2,7 +2,9 @@ Repositorio del grupo Dynamics of development para el ciclo 3 del diplomado MinT
 
 Nombre del equipo: Dynamics of development (DOD).
 
-Interfaz: Maestro de ventas
-
+Integrantes:
+-Alejandro Quiñones Caicedo.
+-Carlos Alberto Camargo Brid.
+-Gabriela Sofía Páez Castro.
 -Dahiana Peláez Gómez.
-
+-Ruby Lorena Hernández Pico.
