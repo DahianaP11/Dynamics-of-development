@@ -1,0 +1,178 @@
+* {
+    font-family: "Krub", sans-serif;
+}
+
+#title {
+    text-align: center;
+    font-size: 35px;
+}
+
+#icono_usuario {
+    color: #fff;
+    font-size: 23px;
+}
+
+
+/* #button{
+    display:inline-block;
+    position: absolute;
+    bottom:4em;
+    right:4em;
+    background-color:#3a0652c7;
+    border-radius:1.5em;
+    color:white;
+    text-transform:uppercase;
+    padding:1em 1.5em;
+} */
+
+
+/*Barra de navegación*/
+
+
+/* .menu_navegacion{
+    width: 500px;
+} */
+
+.menu_usuario,
+li a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* #menu_principal{
+    width: 700px;
+} */
+
+
+/* a {
+    
+    transition: background-color .5s;
+  }*/
+
+#menu_principal a:hover {
+    border-bottom: 1px solid;
+}
+
+#Registrarv {
+    background-color: #3a0652c7;
+    color: #fff;
+    height: 1cm;
+    width: 3.94cm;
+    font-size: 14px;
+    transition: background-color 0.5s;
+}
+
+#Borrar {
+    background-color: #3a0652c7;
+    color: #fff;
+    height: 1cm;
+    width: 2.9cm;
+    font-size: 14px;
+    transition: background-color 0.5s;
+}
+
+#Registrar:hover {
+    background-color: rgb(104, 143, 170);
+}
+
+#Borrar:hover {
+    background-color: rgb(104, 143, 170);
+}
+
+#Cantidad {
+    font-size: 14px;
+    box-sizing: content-box;
+    height: 40%;
+    width: 20%;
+    padding-bottom: 3px;
+}
+
+#vunitario {
+    font-size: 14px;
+    box-sizing: content-box;
+    height: 40%;
+    width: 60%;
+    padding-bottom: 3px;
+}
+
+#vtVenta {
+    font-size: 14px;
+    box-sizing: content-box;
+    height: 40%;
+    width: 40%;
+    padding-bottom: 3px;
+}
+
+#identificadorP {
+    font-size: 14px;
+    box-sizing: content-box;
+    height: 40%;
+    width: 30%;
+    padding-bottom: 3px;
+}
+
+#fVenta {
+    font-size: 14px;
+    box-sizing: content-box;
+    height: 40%;
+    width: 40%;
+    padding-bottom: 3px;
+}
+
+#idCliente {
+    font-size: 14px;
+    box-sizing: content-box;
+    height: 40%;
+    width: 40%;
+    padding-bottom: 3px;
+}
+
+#nCliente {
+    font-size: 14px;
+    box-sizing: content-box;
+    height: 40%;
+    width: 60%;
+    padding-bottom: 3px;
+}
+
+#vendedor {
+    font-size: 14px;
+    box-sizing: content-box;
+    height: 40%;
+    width: 60%;
+    padding-bottom: 3px;
+}
+
+#menu_principal {
+    font-size: 14px;
+    padding-right: 2px;
+}
+
+
+/* .table {
+  border-color: #aaaaaa;
+  border-width: 1px;
+  border-style: solid;
+}*/
+
+
+/* .col-12{
+  border-color: #aaaaaa;
+  border-width: 1px;
+  border-style: solid;
+}  */
+
+
+/*Estilos de pie de pagina*/
+
+footer {
+    position: relative;
+    margin-top: -10px;
+    width: 100%;
+    padding: 10px;
+    clear: booth;
+    background: #3a0652c7;
+    text-align: center;
+    color: #fff;
+}
