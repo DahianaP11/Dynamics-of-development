@@ -1,0 +1,207 @@
+/*Barra de navegación*/
+#icono_usuario{
+  color: #fff;
+  font-size: 23px;
+}
+
+/* .menu_navegacion{
+  width: 500px;
+} */
+
+.menu_usuario, li a:hover{
+  color: #fff;
+  text-decoration: none;
+}
+
+/* #menu_principal{
+  width: 700px;
+} */
+
+
+/*Ya esto es el body*/
+#heading { 
+	color: #000000;
+	font-family: Krub;
+	font-size:  35px;
+}
+/*barra de navegación*/
+.form-control{
+  font-size: 13px;
+  color:#292929;
+  background : #FFFFFF;
+  position : absolute ;
+  left : 120px;
+  top : 240px;
+  width : 316px;
+  height : 30px;
+  border-radius : 10px;
+  -moz-border-radius : 10px;
+  -webkit-border-radius : 10px;
+ }
+/*botón buscar de la barra*/
+.btn-outline-success{
+  font-size: 14px;
+  color:#ffffff;
+  border-color: rgb(25, 0, 66);
+  background : #4B3869;
+  position : absolute ;
+  left : 460px;
+  top : 240px;
+  width : 80px;
+  height : 30px;
+  border-radius : 10px;
+}
+.btn-outline-success:hover {
+  background-color: #b0c2fb;
+  color: rgb(0, 0, 0);
+}
+
+
+
+/* Esto estaba comentado 
+
+/*Botones
+#button2 {
+  background : #4B3869;
+  color: aliceblue;
+  font-size: 18px;
+  position : absolute ;
+  left : 1700px;
+  top : 271px;
+  width : 141px;
+  height : 32px;
+  border-radius : 10px;
+  -moz-border-radius : 10px;
+  -webkit-border-radius : 10px;
+}
+
+#button2:hover {
+ background-color: #b0c2fb;
+ color: rgb(0, 0, 0);
+}*/
+
+/*Esto estaba comentado*/
+
+
+
+#button3 {
+  background : #4B3869;
+  color: aliceblue;
+  font-size: 15px;
+  position : absolute ;
+  left : 120px;
+  top : 575px;
+  width : 100px;
+  height : 30px;
+  border-radius : 10px;
+  -moz-border-radius : 10px;
+  -webkit-border-radius : 10px;
+}
+#button3:hover {
+  background-color: #b0c2fb;
+  color: rgb(0, 0, 0);
+}
+
+.ordenar {
+  background : #4B3869;
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  position : absolute ;
+  left : 1300px;
+  top : 240px;
+  width : 141px;
+  height : 30px;
+  border-radius : 10px;
+  border-color: #000000;
+  -moz-border-radius : 10px;
+  -webkit-border-radius : 10px;
+}
+
+.ordenar:hover{
+   background: #ffffff;
+   color: #000000;
+}
+.ordenar .op {
+   background: #ffffff;
+   color: #000000;
+}
+
+/*Editar tabla*/
+
+.table{
+  background-color: #a6bbf613;
+  color: rgb(0, 0, 0);
+  position : absolute ;
+  left : 120px;
+  top : 300px;
+  width : 1320px;
+  font-size: 15px;
+}
+
+/*Actualizar*/
+.overlay{
+  background : rgb(0, 0, 0, .3);
+  font-size: 18px;
+  position : fixed;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+}
+
+.overlay.active {
+  visibility: visible;
+}
+
+.popup{
+  background: #f8f8f8;
+  box-shadow: 0px 0px 5px 10px rgb(0, 0, 0, 0.3);
+  border-radius : 3px;
+  font-family: krub, sans-serif;
+  padding: 15px;
+  width: 200px;
+}
+
+.popup .btn-cerrar-popup{
+  font-size: 10px;
+  line-height: 10px;
+  display: block;
+  text-align: right;
+}
+
+.popup h3{
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.popup h4{
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.popup .contenedor-inputs{
+  font-size: 18px;
+  font-weight: 200%;
+  margin-bottom: 20px;
+}
+
+.popup .btn-submit {
+  padding: 0 20px;
+  height: 25px;
+  width: 100px;
+  border-color: #000000;
+  border-radius: 10px;
+  color: #ffffff;
+  background: #370042af;
+  font-family: krub, sans-serif;
+  font-size: 12px;
+  text-align: right;
+}
+.popup .btn-submit:hover {
+  background: #ba7ff1c4;
+}
