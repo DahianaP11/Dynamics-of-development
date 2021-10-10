@@ -1,95 +1,88 @@
-/*Utilidades*/
-body{
-    font-family: 'Krub', sans-serif;
-    font-weight: 400;
+*{
+  font-family: 'Krub', sans-serif; 
+  font-size: 15px;   
 }
-h1{
-    font-weight: 700;
+/*Menú principal, links*/
+#menu_principal a:hover{
+border-bottom: 1px solid;
+} 
+/*Icono de usuario*/
+#icono_usuario{
+  color: #fff;
+  font-size: 23px;
 }
-.center{
-    text-align: center;
-    align-content: center;
-    align-items: center ;
+/* Barra de búsqueda */
+.barra_busqueda{
+  width: 400px;
 }
-/*Ya esto es el body*/
-#heading { 
-    color: #000000;
-    font-family: Krub;
-    font-size:  45px; 
+/*Ancho Menú de barra de navegación*/
+.menu{
+  width: 700px;
 }
-/*barra de navegación*/
-.form-control{
-  font-size: 15px;
-  color:#292929;
-  background : #FFFFFF;
-  position : relative;
-  border-radius : 10px;
-  -moz-border-radius : 10px;
-  -webkit-border-radius : 10px;
- }
-/*botón buscar de la barra*/
-.btn-outline-success{
-  font-size: 15px;
-  color:#ffffff;
-  border-color: rgb(25, 0, 66);
-  background : #4B3869;
-  position : relative;
-  border-radius : 10px;
+/* Body */
+#body{
+  background-color: #fffdf9e5;;
 }
-.btn-outline-success:hover {
-  background-color: #b0c2fb;
-  color: rgb(0, 0, 0);
+/*Texto "gestión de usuario"*/
+#texto_inicio{
+  text-align:center;
+  font-size: 28px;    
+}
+/* Estado de la venta */
+.estado, .custom-select:hover{
+  height: 40px;
+  width: 200px;
+  border-radius: 4px;
+  border: 1px solid rgb(197, 197, 197);
 }
 /*Botones*/
-#button2 {
-  background : #4B3869;
-  color: aliceblue;
-  font-size: 18px;
-  position : relative ;
-  margin-top: .5rem;
-  margin-bottom: .5rem;
-  border-radius : 10px;
-  -moz-border-radius : 10px;
-  -webkit-border-radius : 10px;
-}
 
-#button2:hover {
- background-color: #b0c2fb;
- color: rgb(0, 0, 0);
+/*Botón buscar*/
+.boton_buscar, .btn-outline-primary:hover{
+  color: #ffffff;
+  border-color: #3a0652;
+  background-color: #3a0652c4 !important;
+  transition: background-color .5s
 }
-
-#button3, .btn {
-  background : #4B3869;
-  color: aliceblue;
-  font-size: 18px;
-  border-radius : 10px;
-  padding: 7px; 
-  -moz-border-radius : 10px;
-  -webkit-border-radius : 10px;
-  border-color: rgba(0, 0, 0, 0%);;
-  stroke: white;
+.boton_buscar, .btn-outline-primary:visited {
+  color: #3a0652;
+  border-color: #3a0652;
+  background-color: rgb(255, 255, 255) !important;
 }
-#button3:hover,.btn:hover {
-  background-color: #b0c2fb;
-  color: rgb(0, 0, 0);
-  border-color: rgba(0, 0, 0, 0%);;
-  stroke: black;
+/*Botón guardar cambios en el formulario*/
+.boton_formulario_2, .btn-primary:hover{
+  color: #ffffff;
+  border-color: #3a0652c4;
+  background-color: #3a0652c4 !important;
+  transition: background-color .5s
 }
-
-/*Editar tabla*/
-tbody, td, tfoot, th, thead, tr{
-    border-color: #4B3869;
-    border-style: groove;
-    border-width: .5px;
+.boton_formulario_2, .btn-primary:visited{
+  color: #3a0652;
+  border-color: #3a0652;
+  background-color: #ffffffc4 !important;
+} 
+.boton_formulario_2, .btn-primary:focus{
+  color: #3a0652;
+  border-color: #3a0652;
+  background-color: #ffffffc4 !important;
+} 
+/*Botón usuario*/
+.menu_usuario, .btn-link:visited{
+  text-decoration: none;
+  color: #fff;
 }
-button, .edit-button{
-    border-color: rgba(0, 0, 0, 0%);
-    background-color: rgba(0, 0, 0, 0%);
+.menu_usuario, .btn-link:hover{
+  color: rgb(255, 255, 255);
 }
-.end-buttons{
-    display: inline-block;
-    vertical-align: top;
+/* Botón editar */
+.boton_editar, .btn-outline-success:hover{
+  color: #ffffff;
+  border-color: #45868b;
+  background-color: #63B4BB !important;
+  transition: background-color .5s
 }
-.btn-padding{
-    padding: 10px;
+.boton_editar, .btn-outline-success:visited{
+  color: #376e72;
+  border-color: #45868b;
+  background-color: #ffffffc4 !important;
 }
