@@ -16,7 +16,7 @@
     <link rel="shortcut icon" type="stylesheet" href="icon/favicon(DOD).ico" />
 
     <!--CSS del html-->
-    <link rel="stylesheet" href="css/regproduc.css" />
+    <link rel="stylesheet" href="css/regventas.css" />
     <!--CSS Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -71,7 +71,7 @@
                 <a class="nav-link text-uppercase" href="#">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-uppercase" href="#">Registrar venta</a>
+                <a class="nav-link text-uppercase disabled text-uppercase" href="#">Registrar venta</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link text-uppercase" href="#"
@@ -79,7 +79,7 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link active disabled text-uppercase" href="#"
+                <a class="nav-link text-uppercase" href="#"
                   >Registrar producto</a
                 >
               </li>
@@ -132,10 +132,10 @@
     <!-- Titulo formulario y tabla-->
 
     <div class="container-fluid">
-      <h1 class="display-4" id="title">REGISTRO DE PRODUCTOS</h1>
-      <br /><br />
+      <h1 class="display-4" id="title">REGISTRAR VENTA</h1>
+      <br />
       <div class="row">
-        <div class="col-6">
+        <div class="col-12">
           <form id="formulario">
             <div class="form-group row">
               <label for="identificador" class="col-sm-2 col-form-label"
@@ -149,29 +149,28 @@
                   readonly
                 />
               </div>
-            </div>
-            <br />
+            </div>            
             <div class="form-group row">
-              <label for="Descripcion" class="col-sm-2 col-form-label"
-                >Descripción</label
+              <label for="Cantidad" class="col-sm-2 col-form-label"
+                >Cantidad</label
               >
               <div class="col-sm-4">
                 <input
-                  type="text"
+                  type="number"
                   class="form-control"
-                  id="descripcion"
-                  placeholder="Descripción"
+                  id="Cantidad"
+                  placeholder="Cantidad"
+                  min="1"
                 />
               </div>
-            </div>
-            <br />
+            </div>            
             <div class="form-group row">
               <label for="vunitario" class="col-sm-2 col-form-label"
                 >Valor Unitario</label
               >
               <div class="col-sm-2">
                 <input
-                  type="input"
+                  type="currency"
                   class="form-control"
                   id="vunitario"
                   placeholder="Valor unitario"
@@ -179,28 +178,76 @@
               </div>
             </div>
             <div class="form-group row">
-              <div class="col-sm-2">Estado</div>
-              <div class="col-sm-10">
-                <div class="form-check">
-                  <label class="form-check-label">
-                    <input class="form-check-input" type="checkbox" id="disp" onclick="disponibleClick()"/>
-                    Disponible
-                    <br />
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      id="Nodisp" onclick="NodispClick()"
-                    />
-                    No Disponible
-                  </label>
-                </div>
+              <label for="vtVenta" class="col-sm-2 col-form-label"
+                >Valor total venta</label
+              >
+              <div class="col-sm-4">
+                <input
+                  type="currency"
+                  class="form-control"
+                  id="vtVenta"
+                  placeholder="Valor total venta"
+                />
               </div>
             </div>
+            <div class="form-group row">
+              <label for="fVenta" class="col-sm-2 col-form-label"
+                >Fecha venta</label
+              >
+              <div class="col-sm-4">
+                <input
+                  type="date"
+                  class="form-control"
+                  id="fVenta"
+                  placeholder="Fecha venta"
+                />
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="idCliente" class="col-sm-2 col-form-label"
+                >Identificacion cliente</label
+              >
+              <div class="col-sm-4">
+                <input
+                  type="input"
+                  class="form-control"
+                  id="idCliente"
+                  placeholder="Identificación cliente"
+                />
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="nCliente" class="col-sm-2 col-form-label"
+                >Nombre cliente</label
+              >
+              <div class="col-sm-4">
+                <input
+                  type="input"
+                  class="form-control"
+                  id="nCliente"
+                  placeholder="Nombre cliente"
+                />
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="vendedor" class="col-sm-2 col-form-label"
+                >Vendedor encargado</label
+              >
+              <div class="col-sm-4">
+                <input
+                  type="input"
+                  class="form-control"
+                  id="vendedor"
+                  placeholder="Vendedor encargado"
+                />
+              </div>
+            </div>
+
             <br />
             <div class="form-group row">
               <div class="col-sm-12">
-                <button type="submit" class="btn btn-space" id="Registrar">
-                  Registrar producto
+                <button type="submit" class="btn btn-space" id="Registrarv">
+                  Registrar venta
                 </button>
                 <button type="reset" class="btn btn-space" id="Borrar">
                   Borrar datos
@@ -209,30 +256,43 @@
             </div>
           </form>
         </div>
+        <br />
 
-        <div class="col-6">
+        <div class="col-12">
           <!--Tabla-->
           <table class="table table-responsive" id="Table">
-            <center><p class="h2">Ultimos productos registrados</p></center>
+            <center><p class="h2">Ultimas ventas registradas</p></center>
             <thead>
               <tr>
                 <th scope="col">#</th>
                 <th scope="col">Identificador</th>
-                <th scope="col">Descripción</th>
+                <th scope="col">Cantidad</th>
                 <th scope="col">Valor Unitario</th>
-                <th scope="col">Estado</th>
+                <th scope="col">Valor Total</th>
+                <th scope="col">Fecha venta</th>
+                <th scope="col">Identificación Cliente</th>
+                <th scope="col">Nombre Cliente</th>
+                <th scope="col">Vendedor encargado</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <th scope="row">1</th>
                 <td>oHOBqxI6b</td>
-                <td>Cuido para perros Dogchow</td>
-                <td>35.000</td>
-                <td>Disponible</td>
+                <td>5</td>
+                <td>$35.000</td>
+                <td>$175.000</td>
+                <td>01/09/2021</td>
+                <td>1000256225</td>
+                <td>Joaquin Gonzalez</td>
+                <td>Lorena Hernandez</td>
               </tr>
               <tr>
                 <th scope="row">2</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -244,10 +304,18 @@
                 <td></td>
                 <td></td>
                 <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
               </tr>
               <tr>
                 <th scope="row">4</th>
                 <td ></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -258,6 +326,10 @@
                 <td></td>
                 <td></td>
                 <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
               </tr>
             </tbody>
           </table>
@@ -265,7 +337,7 @@
       </div>
     </div>
     <!--JS archivo personalizado-->
-    <script src="js/reg_pr.js"></script>
+    <script src="js/reg_ventas.js"></script>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script

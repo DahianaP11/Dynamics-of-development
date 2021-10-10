@@ -1,7 +1,7 @@
-document.getElementById("Registrar").onclick = muestraMensaje;
+document.getElementById("Registrarv").onclick = muestraMensaje;
 
 function muestraMensaje() {
-    alert('Se ha registrado el producto exitosamente');
+    alert('Venta registrada exitosamente');
   }
 
 function makeid(){   
@@ -19,20 +19,20 @@ function makeid(){
    // return result;
 }
 
-function disponibleClick(){
-   document.getElementById("Nodisp").disabled = true;
+// function disponibleClick(){
+//    document.getElementById("Nodisp").disabled = true;
 
-   if (document.getElementById("disp").checked==false){
-      document.getElementById("Nodisp").disabled = false;
-   }
-}
+//    if (document.getElementById("disp").checked==false){
+//       document.getElementById("Nodisp").disabled = false;
+//    }
+// }
 
-function NodispClick(){
-   document.getElementById("disp").disabled = true;
-   if (document.getElementById("Nodisp").checked==false){
-      document.getElementById("disp").disabled = false;
-   }
-}
+// function NodispClick(){
+//    document.getElementById("disp").disabled = true;
+//    if (document.getElementById("Nodisp").checked==false){
+//       document.getElementById("disp").disabled = false;
+//    }
+// }
 
 
 makeid();
