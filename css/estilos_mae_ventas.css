@@ -81,6 +81,13 @@ border-bottom: 1px solid;
     background-color: #ffffffc4 !important;
 } 
 
+.boton_formulario_2, .btn-primary:focus{
+    color: #3a0652;
+    border-color: #3a0652;
+    background-color: #ffffffc4 !important;
+} 
+
+
 
 /*Botón usuario*/
 

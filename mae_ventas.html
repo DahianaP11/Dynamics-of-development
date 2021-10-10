@@ -50,9 +50,9 @@
                     <li class="nav-item"><a class="nav-link active text-uppercase" href="#">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link text-uppercase" href="#">Registrar venta</a></li>
                     <li class="nav-item"><a class="nav-link text-uppercase" href="#">Gestionar de ventas</a></li>
-                    <li class="nav-item"><a class="nav-link text-uppercase " href="#">Registrar producto</a></li>
+                    <li class="nav-item"><a class="nav-link text-uppercase" href="#">Registrar producto</a></li>
                     <li class="nav-item"><a class="nav-link text-uppercase" href="#">Gestionar de productos</a></li>
-                    <li class="nav-item"><a class="nav-link disabled text-uppercase " href="#" tabindex="-1" aria-disabled="true">Maestro de usuario</a></li>
+                    <li class="nav-item"><a class="nav-link text-uppercase" href="#" >Maestro de usuario</a></li>
                 </ul>
             </div>
         </div>
@@ -114,7 +114,7 @@
                   <form>
                       <div class="mb-3">
                         <label for="inputIDVentas" class="form-label">ID Venta</label>
-                        <input class="form-control" id="disabledInput" type="text" placeholder="23123" disabled>
+                        <input class="form-control" type="text" id="identificadorVID" readonly>
                         <div class="form-text">Este campo no es posible editar</div>
                       </div>
                       <div class="mb-3">
@@ -164,15 +164,15 @@
               </div>
               <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-              <button type="button" class="btn btn-primary boton_formulario_2" data-bs-toggle="collapse" href="#confirmacion">Guardar cambios</button>
+              <button type="button" class="btn btn-primary boton_formulario_2" data-bs-toggle="collapse" id="confirmacion">Guardar cambios</button>
             
               <!-- Confirmación de los cambios en el formulario-->
-              <div class="collapse" id="confirmacion">
+              <!-- <div class="collapse" id="confirmacion">
                 <div class="alert alert-success" role="alert">
                     <p>¡Sus cambios han sido guardados con éxito!</p>
                 </div>
-              
-              </div>
+              </div> -->
+              <!-- href="#confirmacion" -->
               
             </div>
           </div>
@@ -256,7 +256,8 @@
 
 
 
-
+  <!--JS archivo personalizado-->
+  <script src="js/js_mae_ventas.js"></script>
 
   <!-- JS Bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
