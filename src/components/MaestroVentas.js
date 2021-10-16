@@ -1,4 +1,5 @@
 import {useRef} from "react";
+import NavBar from "./NavBar";
 
 export default function MaestroVentas() {
     let refConfirmacion = useRef();

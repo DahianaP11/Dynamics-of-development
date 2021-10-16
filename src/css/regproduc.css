@@ -5,6 +5,7 @@
 #title {
   text-align: center;
   font-size: 40px;
+  font-weight: 700;
 }
 
 #icono_usuario {
@@ -56,6 +57,7 @@ li a:hover {
   width: 3.94cm;
   font-size: 14px;
   transition: background-color 0.5s;
+  margin-right: 1rem;
 }
 
 #Borrar {
@@ -99,6 +101,9 @@ li a:hover {
 #menu_principal {
   font-size: 14px;
   padding-right: 2px;
+}
+.form-check-label{
+  display: flex;
 }
 
 /* .table {
