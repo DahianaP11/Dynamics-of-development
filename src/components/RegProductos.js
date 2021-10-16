@@ -1,8 +1,9 @@
-import {useRef} from "react";
+import {useRef, useState} from "react";
 import "../css/regproduc.css";
 import NavBar from "./NavBar";
 
 export default function RegProductos(){
+    const [form, setForm] = useState({});
     let refRegistrar = useRef(),
         refIdentificadorP = useRef()
 
@@ -19,6 +20,12 @@ export default function RegProductos(){
         };      
             return result;
     };
+    const handleChange = (e)=>{
+      setForm({
+          ...form,
+          [e.target.name]:e.target.value
+      });
+  };
     return(
         <>
           <NavBar />
@@ -40,14 +47,14 @@ export default function RegProductos(){
                   <div className="form-group row">
                     <label htmlFor="Descripcion" className="col-sm-2 col-form-label">Descripción</label>
                     <div className="col-sm-4">
-                      <input type="text" className="form-control" id="descripcion" placeholder="Descripción" />
+                      <input type="text" className="form-control" id="descripcion" placeholder="Descripción" name="descripcion" value={form.name} onChange={handleChange} />
                     </div>
                   </div>
                   <br />
                   <div className="form-group row">
                     <label htmlFor="vunitario" className="col-sm-2 col-form-label">Valor Unitario</label>
                     <div className="col-sm-2">
-                      <input type="input" className="form-control" id="vunitario" placeholder="Valor unitario" />
+                      <input type="input" className="form-control" id="vunitario" placeholder="Valor unitario" name="vunitario" value={form.name} onChange={handleChange} />
                     </div>
                   </div>
                 <br />
@@ -55,11 +62,11 @@ export default function RegProductos(){
                     <div className="col-sm-2">Estado</div>
                         <div className="col-sm-10">
                             <div className="form-check">
-                                <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+                                <input className="form-check-input" type="radio" name="Disponibilidad" id="flexRadioDefault1" value="disponible" onChange={handleChange} />
                                 <label className="form-check-label" htmlFor="flexRadioDefault1">Disponible</label>
                             </div>
                             <div className="form-check">
-                                <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" defaultChecked />
+                                <input className="form-check-input" type="radio" name="Disponibilidad" id="flexRadioDefault2" value="nodisponible" onChange={handleChange} />
                                 <label className="form-check-label" htmlFor="flexRadioDefault2">No Disponible</label>
                             </div>
                     </div>
