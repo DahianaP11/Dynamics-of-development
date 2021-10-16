@@ -1,0 +1,178 @@
+*{
+    font-family: 'Krub', sans-serif; 
+    font-size: 15px;   
+ }
+
+/*Menú principal, links*/
+#menu_principal a:hover{
+border-bottom: 1px solid;
+} 
+
+/*Icono de usuario*/
+#icono_usuario{
+    color: #fff;
+    font-size: 23px;
+}
+
+/* Barra de búsqueda */
+.barra_busqueda{
+    width: 400px;
+}
+
+/*Ancho Menú de barra de navegación*/
+.menu{
+    width: 700px;
+}
+
+
+/* Body */
+#body{
+    background-color: #fffdf9e5;;
+}
+
+/*Texto "gestión de usuario"*/
+#texto_inicio{
+    text-align:center;
+    font-size: 28px;    
+}
+
+/* Estado de la venta */
+.estado, .custom-select:hover{
+    height: 40px;
+    width: 200px;
+    border-radius: 4px;
+    border: 1px solid rgb(197, 197, 197);
+}
+
+
+
+/*Botones*/
+
+
+/*Botón buscar*/
+
+.boton_buscar, .btn-outline-primary:hover{
+    color: #ffffff;
+    border-color: #3a0652;
+    background-color: #3a0652c4 !important;
+    transition: background-color .5s
+}
+
+
+.boton_buscar, .btn-outline-primary:visited {
+    color: #3a0652;
+    border-color: #3a0652;
+    background-color: rgb(255, 255, 255) !important;
+}
+
+
+/*Botón guardar cambios en el formulario*/
+
+.boton_formulario_2, .btn-primary:hover{
+    color: #ffffff;
+    border-color: #3a0652c4;
+    background-color: #3a0652c4 !important;
+    transition: background-color .5s
+}
+
+.boton_formulario_2, .btn-primary:visited{
+    color: #3a0652;
+    border-color: #3a0652;
+    background-color: #ffffffc4 !important;
+} 
+
+.boton_formulario_2, .btn-primary:focus{
+    color: #3a0652;
+    border-color: #3a0652;
+    background-color: #ffffffc4 !important;
+} 
+
+
+
+/*Botón usuario*/
+
+.menu_usuario, .btn-link:visited{
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu_usuario, .btn-link:hover{
+    color: rgb(255, 255, 255);
+}
+
+
+/* Botón editar */
+
+.boton_editar, .btn-outline-success:hover{
+    color: #ffffff;
+    border-color: #45868b;
+    background-color: #63B4BB !important;
+    transition: background-color .5s
+}
+
+
+.boton_editar, .btn-outline-success:visited{
+    color: #376e72;
+    border-color: #45868b;
+    background-color: #ffffffc4 !important;
+}
+
+
+
+
+/*Botón dropwdown de usuario*/
+/* .menu_usuario, li a:hover{
+    /* color: rgb(48, 238, 0) !import; */
+   /*  text-decoration: none;
+} */
+
+/*Color de link*/
+/* .menu_usuario, li a:link{
+    color: rgb(255, 255, 255);
+} */
+
+
+/* .boton_buscar, .btn-ttc,
+.btn-ttc:active
+ {
+  color: #3a0652;
+  text-shadow: 0 -1px 0 rgba(255, 255, 255, 0.25);
+  background-color: rgb(255, 255, 255);
+  border-color: #3a0652d2;
+}  
+
+.bonton_buscar, .btn-primary:visited{
+    color: #3a0652;
+    background-color: rgb(255, 255, 255);
+    border-color: #3a0652d2;
+}
+
+.boton_buscar, .btn-primary:active {
+    color: #b42815;
+    background-color: rgb(255, 255, 255);
+    border-color: #53c41ed2;
+} */
+
+/* .boton_buscar, .btn-primary:hover {
+    color: #c511a7;
+    background-color: rgb(255, 255, 255);
+    border-color: #bed10ed2;
+} */
+
+/* .boton_buscar, .btn-dprimary:focus{
+    color: #c511a7;
+    background-color: rgb(255, 255, 255);
+    border-color: #bed10ed2;
+}
+
+ .boton_buscar, .btn-ttc{
+    color: #7c0ac9;
+    background-color: rgb(255, 255, 255);
+    border-color: #d68e08d2;
+} 
+
+.bonton_buscar, .btn-primary{
+    color: #c511a7;
+    background-color: rgb(255, 255, 255);
+    border-color: #bed10ed2;
+} */
