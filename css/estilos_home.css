@@ -1,0 +1,104 @@
+*{
+    font-family: 'Krub', sans-serif; 
+    font-size: 15px;   
+ }
+
+ /*Menú principal, links*/
+#menu_principal a:hover{
+border-bottom: 1px solid;
+}
+
+/*Icono de usuario*/
+#icono_usuario{
+    color: #fff;
+    font-size: 23px;
+}
+
+/*Ancho Menú de barra de navegación*/
+.menu{
+    width: 700px;
+}
+
+/* Body */
+#body{
+    background-color: #fffdf9e5;;
+}
+
+/*Botón usuario*/
+.menu_usuario, .btn-link:visited{
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu_usuario, .btn-link:hover{
+    color: rgb(255, 255, 255);
+}
+
+/* Carrusel */
+#img_carru_1{
+    width: 100%;
+    height: 560px;
+}
+
+/* #img_carru_3{
+    width: 100%;
+    height: 561px;
+} */
+
+
+#img_carru_4{
+    width: 100%;
+    height: 561px;
+}
+
+
+/* Links */
+
+#link_reg_ventas {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+
+#link_reg_pro{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+/* Google Button */
+.google-btn {
+    width: 184px;
+    height: 42px;
+    background-color: #4285f4;
+    border-radius: 2px;
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, .25);
+}
+.google-btn .google-icon-wrapper {
+    position: absolute;
+    margin-top: 1px;
+    margin-left: 1px;
+    width: 40px;
+    height: 40px;
+    border-radius: 2px;
+    background-color: #fff;
+}
+.google-btn .google-icon {
+    position: absolute;
+    margin-top: 11px;
+    margin-left: 11px;
+    width: 18px;
+    height: 18px;
+}
+.google-btn .btn-text {
+    float: right;
+    margin: 11px 11px 0 0;
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    font-family: "Roboto";
+}
+.google-btn:hover {
+    box-shadow: 0 0 6px #4285f4;
+}
+.google-btn:active {
+    background: #1669f2;
+}
