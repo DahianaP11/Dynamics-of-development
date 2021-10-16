@@ -4,9 +4,7 @@ import NavBar from "./NavBar";
 
 export default function RegProductos(){
     let refRegistrar = useRef(),
-        refIdentificadorP = useRef(),
-        refNoDisp = useRef(),
-        refDisp = useRef();
+        refIdentificadorP = useRef()
 
     function MuestraMensaje() {
         alert('Se ha registrado el producto exitosamente');
