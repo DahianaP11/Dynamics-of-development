@@ -26,7 +26,8 @@ border-bottom: 1px solid;
 /*Texto "gestión de usuario"*/
 #texto_inicio{
   text-align:center;
-  font-size: 28px;    
+  font-size: 28px;
+  font-weight: 700;  
 }
 /* Estado de la venta */
 .estado, .custom-select:hover{
