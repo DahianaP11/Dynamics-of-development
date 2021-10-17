@@ -10,8 +10,6 @@ export default function MaestroProductos(){
     };
     return(
         <>
-          <link href="css/styles.css" rel="stylesheet" />
-          {/* Iconos CSS Fontawesome */}
           <title>Maestro de Productos</title>
           <NavBar/>
           <br />
