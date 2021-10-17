@@ -1,6 +1,30 @@
+import {useState,useRef} from 'react';
 import NavBar from './NavBar';
+import MakeID from "./MakeID";
+import logo from "../img/logo_DOD_color_inverso.png";
 
 export default function RegVentas(){
+  const [form, setForm] = useState({});
+  let refCantidad = useRef(),
+    refVunitario = useRef(),
+    refVtVenta = useRef(),
+    refFventa = useRef(),
+    refIDCliente = useRef(),
+    refNCliente = useRef(),
+    refVendedor = useRef();
+  const handleChange = (e) => {
+      setForm({
+        ...form,
+        [e.target.name]: e.target.value,
+      });
+    };
+  function vTotal(){
+      var resultado=0;
+      resultado=document.getElementById("Cantidad").value*document.getElementById("vunitario").value;
+      document.getElementById('vtVenta').value=resultado;
+      setForm({...form,"VTotal":resultado});
+   }
+  return(
     <>
         <title>Registro de Ventas</title>
         <NavBar />
@@ -14,49 +38,49 @@ export default function RegVentas(){
                   <div className="form-group row">
                     <label htmlFor="identificador" className="col-sm-2 col-form-label">Identificador</label>
                     <div className="col-sm-3">
-                      <input type="text" className="form-control input" id="identificadorP" readOnly />
+                      <input type="text" className="form-control input" id="identificadorP" value={MakeID()} readOnly />
                     </div>
                   </div>            
                   <div className="form-group row">
                     <label htmlFor="Cantidad" className="col-sm-2 col-form-label">Cantidad</label>
                     <div className="col-sm-4">
-                      <input type="number" className="form-control" id="Cantidad" placeholder="Cantidad" min={1} />
+                      <input type="number" className="form-control" id="Cantidad" name="Cantidad" value={form.name} ref={refCantidad} placeholder="Cantidad" onChange={handleChange} min={1} />
                     </div>
                   </div>            
                   <div className="form-group row">
                     <label htmlFor="vunitario" className="col-sm-2 col-form-label">Valor Unitario</label>
                     <div className="col-sm-2">
-                      <input type="currency" className="form-control" id="vunitario" placeholder="Valor unitario" />
+                      <input type="currency" className="form-control" id="vunitario" name="Vunitario" value={form.name} ref={refVunitario} onChange={handleChange} placeholder="Valor unitario" />
                     </div>
                   </div>
                   <div className="form-group row">
                     <label htmlFor="vtVenta" className="col-sm-2 col-form-label">Valor total venta</label>
                     <div className="col-sm-4">
-                      <input type="currency" className="form-control" id="vtVenta" placeholder="Valor total venta" onclick="vTotal()" />
+                      <input type="currency" className="form-control" id="vtVenta" name="VtVenta" value={form.name} ref={refVtVenta} placeholder="Valor total venta" onClick={vTotal}/>
                     </div>
                   </div>
                   <div className="form-group row">
                     <label htmlFor="fVenta" className="col-sm-2 col-form-label">Fecha venta</label>
                     <div className="col-sm-4">
-                      <input type="date" className="form-control" id="fVenta" placeholder="Fecha venta" />
+                      <input type="date" className="form-control" id="fVenta" name="FVenta" value={form.name} ref={refFventa} placeholder="Fecha venta" onChange={handleChange} />
                     </div>
                   </div>
                   <div className="form-group row">
                     <label htmlFor="idCliente" className="col-sm-2 col-form-label">Identificacion cliente</label>
                     <div className="col-sm-4">
-                      <input type="text" className="form-control" id="idCliente" placeholder="Identificación cliente" />
+                      <input type="text" className="form-control" id="idCliente" name="IDCliente" value={form.name} ref={refIDCliente} placeholder="Identificación cliente" onChange={handleChange} />
                     </div>
                   </div>
                   <div className="form-group row">
                     <label htmlFor="nCliente" className="col-sm-2 col-form-label">Nombre cliente</label>
                     <div className="col-sm-4">
-                      <input type="text" className="form-control" id="nCliente" placeholder="Nombre cliente" />
+                      <input type="text" className="form-control" id="nCliente" name="NCliente" value={form.name} ref={refNCliente} placeholder="Nombre cliente" onChange={handleChange} />
                     </div>
                   </div>
                   <div className="form-group row">
                     <label htmlFor="vendedor" className="col-sm-2 col-form-label">Vendedor encargado</label>
                     <div className="col-sm-4">
-                      <input type="text" className="form-control" id="vendedor" placeholder="Vendedor encargado" />
+                      <input type="text" className="form-control" id="vendedor" name="Vendedor" value={form.name} ref={refVendedor} placeholder="Vendedor encargado" onChange={handleChange} />
                     </div>
                   </div>
                   <br />
@@ -75,7 +99,8 @@ export default function RegVentas(){
               <br />
               <div className="col-12">
                 {/*Tabla*/}
-                <center><p className="h2">Ultimas ventas registradas</p></center><table className="table table-responsive" id="Table">
+                <p className="h2">Ultimas ventas registradas</p>
+                <table className="table table-responsive" id="Table">
                   <thead>
                     <tr>
                       <th scope="col">#</th>
@@ -152,9 +177,10 @@ export default function RegVentas(){
           </div>
           {/*JS archivo personalizado*/}
           <footer>
-            <img src="img/logo_DOD.png" width="60px"/>
-            <p><center>Contactanos: ventasdod@dod.com</center></p>
+            <img src={logo} width="60px"/>
+            <p>Contactanos: ventasdod@dod.com</p>
           </footer>
           {/* Option 1: Bootstrap Bundle with Popper */}
         </>
+  )
 }

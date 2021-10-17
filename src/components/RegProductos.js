@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
 import "../css/regproduc.css";
 import NavBar from "./NavBar";
+import MakeID from "./MakeID";
 
 export default function RegProductos() {
   const [form, setForm] = useState({});
@@ -9,17 +10,6 @@ export default function RegProductos() {
 
   function MuestraMensaje() {
     alert("Se ha registrado el producto exitosamente");
-  }
-
-  function makeid() {
-    var result = "";
-    var characters =
-      "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-    var charactersLength = characters.length;
-    for (var i = 0; i < 9; i++) {
-      result += characters.charAt(Math.floor(Math.random() * charactersLength));
-    }
-    return result;
   }
   const handleChange = (e) => {
     setForm({
@@ -54,7 +44,7 @@ export default function RegProductos() {
                     className="form-control input"
                     id="identificadorP"
                     ref={refIdentificadorP}
-                    value={makeid()}
+                    value={MakeID()}
                     readOnly
                   />
                 </div>
