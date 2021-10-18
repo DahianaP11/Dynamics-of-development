@@ -1,11 +1,8 @@
-import {useRef, useState} from "react";
 import "../css/maeU.css"
-import NavBar from "./NavBar";
 
 export default function MaestroUsuario(){
     return(
         <>
-          <NavBar />
           <title>Gestion de usuarios</title>
           <br /><br />
           <center><h1 id="heading">Maestro de usuarios</h1></center>       

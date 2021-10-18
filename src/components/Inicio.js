@@ -1,18 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import img from "../img/Imagenes-editadas/1.png";
 import img3 from "../img/Imagenes-editadas/4.jpg";
-import "../css/estilos_home.css";
-import NavBar from "./NavBar";
-import { useEffect, useState } from "react";
 
 export default function inicio() {
   return (
     <>
-      {/* Estilos personalizadas CSS */}
       <title>Inicio | DOD</title>
-      {/* Barra de navegación */}
-      <NavBar />
-      {/* Carrusel */}
       <div
         id="carouselExampleDark"
         className="carousel carousel-dark slide"
@@ -44,9 +38,9 @@ export default function inicio() {
             />
             <div className="carousel-caption d-none d-md-block">
               <h4>Registrar venta</h4>
-              <a href="reg_ventas.html" id="link_reg_ventas">
+              <Link to="/Registro_Venta" id="link_reg_ventas">
                 Ingrese aquí
-              </a>
+              </Link>
             </div>
           </div>
           <div className="carousel-item">
@@ -58,9 +52,9 @@ export default function inicio() {
             />
             <div className="carousel-caption d-none d-md-block">
               <h4 style={{ color: "#ffffff" }}>Registrar producto</h4>
-              <a href="reg_productos.html" id="link_reg_pro">
+              <Link to="/Registro_Productos" id="link_reg_pro">
                 Ingrese aquí
-              </a>
+              </Link>
             </div>
           </div>
         </div>

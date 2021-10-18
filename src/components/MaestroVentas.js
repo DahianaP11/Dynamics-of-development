@@ -1,5 +1,4 @@
 import {useRef} from "react";
-import NavBar from "./NavBar";
 
 export default function MaestroVentas() {
     let refConfirmacion = useRef();
@@ -10,7 +9,6 @@ export default function MaestroVentas() {
   return (
     <>
       <title>Gestionar ventas</title>
-      <NavBar />
       <br />
       <div className="container row">
         {/* Texto de inicio */}
@@ -139,7 +137,7 @@ export default function MaestroVentas() {
                     </label>
                     <br />
                     <select className="custom-select estado">
-                      <option selected>Elija una opción</option>
+                      <option defaultValue>Elija una opción</option>
                       <option value={1}>Proceso</option>
                       <option value={2}>Cancelada</option>
                       <option value={3}>Entregada</option>

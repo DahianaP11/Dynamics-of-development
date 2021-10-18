@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "../img/logo_DOD.png";
-import "../css/styles.css";
 import { useEffect, useState } from "react";
+import {Link} from "react-router-dom";  
 
 // Ejemplo Robert OAuth
 
@@ -96,7 +96,7 @@ export default function NavBar() {
         <div className="container row  d-flex justify-content-md-between">
           {/* Logo */}
           <div className="col-md-1 ps-5 pb-2">
-            <a href="#" type="button" className="navbar-brand pb-1">
+            <Link to="/" type="button" className="navbar-brand pb-1">
               {" "}
               <img
                 src={logo}
@@ -104,7 +104,7 @@ export default function NavBar() {
                 width="80px"
                 className="pbt-md-2 m-0"
               />
-            </a>
+            </Link>
           </div>
           {/* Botón collapse en navegación por móvil*/}
           <div className="col-2 d-md-none">
@@ -125,40 +125,40 @@ export default function NavBar() {
             <div className="collapse navbar-collapse" id="menu_principal">
               <ul className="navbar-nav">
                 <li className="nav-item">
-                  <a
+                  <Link
                     className="nav-link active text-uppercase"
-                    href="index.html"
+                    to="/"
                   >
                     Inicio
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link text-uppercase" href="reg_ventas.html">
+                  <Link className="nav-link text-uppercase" to="/Registro_Venta">
                     Registrar venta
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link text-uppercase" href="mae_ventas.html">
+                  <Link className="nav-link text-uppercase" to="/Maestro_Ventas">
                     Gestionar de ventas
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a
+                  <Link
                     className="nav-link text-uppercase"
-                    href="reg_productos.html"
+                    to="/Registro_Productos"
                   >
                     Registrar producto
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link text-uppercase" href="maeProduct.html">
+                  <Link className="nav-link text-uppercase" to="/Maestro_Productos">
                     Gestionar de productos
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link text-uppercase" href="interUsu.html">
+                  <Link className="nav-link text-uppercase" to="/Maestro_Usuario">
                     Maestro de usuario
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>

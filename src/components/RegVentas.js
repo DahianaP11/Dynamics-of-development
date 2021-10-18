@@ -1,9 +1,8 @@
 import {useState,useRef} from 'react';
-import NavBar from './NavBar';
 import MakeID from "./MakeID";
-import logo from "../img/logo_DOD_color_inverso.png";
 
 export default function RegVentas(){
+  
   const [form, setForm] = useState({});
   let refCantidad = useRef(),
     refVunitario = useRef(),
@@ -27,7 +26,6 @@ export default function RegVentas(){
   return(
     <>
         <title>Registro de Ventas</title>
-        <NavBar />
         {/* Titulo formulario y tabla*/}
           <div className="container-fluid">
             <h1 className="display-4" id="title">REGISTRAR VENTA</h1>
@@ -175,12 +173,6 @@ export default function RegVentas(){
               </div>
             </div>
           </div>
-          {/*JS archivo personalizado*/}
-          <footer>
-            <img src={logo} width="60px"/>
-            <p>Contactanos: ventasdod@dod.com</p>
-          </footer>
-          {/* Option 1: Bootstrap Bundle with Popper */}
         </>
   )
 }

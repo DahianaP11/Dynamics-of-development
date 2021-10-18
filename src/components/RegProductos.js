@@ -1,6 +1,4 @@
 import { useRef, useState } from "react";
-import "../css/regproduc.css";
-import NavBar from "./NavBar";
 import MakeID from "./MakeID";
 
 export default function RegProductos() {
@@ -19,7 +17,6 @@ export default function RegProductos() {
   };
   return (
     <>
-      <NavBar />
       <title>Registro de Productos</title>
       {/* Titulo formulario y tabla*/}
       <div className="container-fluid">

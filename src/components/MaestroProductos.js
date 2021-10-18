@@ -1,5 +1,4 @@
 import { useRef } from 'react';
-import NavBar from "./NavBar";
 import "../css/styles.css";
 
 export default function MaestroProductos(){
@@ -11,7 +10,6 @@ export default function MaestroProductos(){
     return(
         <>
           <title>Maestro de Productos</title>
-          <NavBar/>
           <br />
           <div className="container row">
             {/* Texto de inicio */}
