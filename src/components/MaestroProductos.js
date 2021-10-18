@@ -1,5 +1,4 @@
 import { useRef } from 'react';
-import "../css/styles.css";
 
 export default function MaestroProductos(){
     let refConfirmacion = useRef();

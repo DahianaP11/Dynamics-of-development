@@ -1,5 +1,3 @@
-import "../css/maeU.css"
-
 export default function MaestroUsuario(){
     return(
         <>
