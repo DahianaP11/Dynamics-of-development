@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import img from "../img/Imagenes-editadas/1.png";
 import img3 from "../img/Imagenes-editadas/4.jpg";
+import "../fontawesome/css/all.css";
 
 export default function inicio() {
   return (

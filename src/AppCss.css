@@ -6,3 +6,15 @@
     align-items: center;
     margin: 0 auto;   
 }
+/*Botón usuario*/
+.a-menu_usuario, .btn-link:visited{
+    text-decoration: none;
+    color: #fff;
+  }
+.a-menu_usuario, .btn-link:hover{
+    color: rgb(255, 255, 255);
+  }
+#a-icono_usuario{
+    color: #fff;
+    font-size: 23px;
+}

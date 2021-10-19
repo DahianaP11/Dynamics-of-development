@@ -202,19 +202,19 @@ export default function NavBar() {
           {/* Login */}
           <div className="col-md-2 d-flex justify-content-md-end ">
             <div
-              className="dropdown border-start link_dropwdown"
+              className="dropdown link_dropwdown border-start"
               id="boton_dropdown"
             >
               {/* Login */}
               <a
-                className="btn btn btn-link dropdown-toggle menu_usuario"
+                className="btn btn btn-link dropdown-toggle a-menu_usuario"
                 href="#"
                 role="button"
                 id="dropdownMenuLink"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                IDENTIFÍCATE
+                <i className="fas fa-user-alt" id="a-icono_usuario"></i>
               </a>
               {/* Dropdown */}
               <ul className="dropdown-menu">
