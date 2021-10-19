@@ -87,7 +87,7 @@ export default function NavBar() {
             >
               {/* Login */}
               <a
-                className="btn btn btn-link dropdown-toggle menu_usuario"
+                className="btn btn btn-link dropdown-toggle a-menu_usuario"
                 href="#"
                 role="button"
                 id="dropdownMenuLink"
