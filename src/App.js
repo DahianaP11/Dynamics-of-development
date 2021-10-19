@@ -8,6 +8,7 @@ import RegVentas from "./components/RegVentas";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Foooter";
 import "./AppCss.css";
+import "../src/fontawesome/css/all.css";
 
 function App() {
   return (
