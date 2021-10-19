@@ -78,7 +78,6 @@ export default function inicio() {
           <span className="visually-hidden">Next</span>
         </button>
       </div>
-      <Footer/> 
     </>
   );
 }
