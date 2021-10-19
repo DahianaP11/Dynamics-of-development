@@ -23,7 +23,6 @@ function App() {
             <Route path="/Maestro_Usuario" exact component={MaestroUsuario}/>
           </Switch>
       </Router>
-      <Footer />
     </div>
   );
 }

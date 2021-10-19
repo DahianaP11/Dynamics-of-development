@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import img from "../img/Imagenes-editadas/1.png";
 import img3 from "../img/Imagenes-editadas/4.jpg";
+import Footer from "./Foooter";
 
 export default function inicio() {
   return (
@@ -37,22 +38,22 @@ export default function inicio() {
               alt="..."
             />
             <div className="carousel-caption d-none d-md-block">
-              <h4>Registrar venta</h4>
-              <Link to="/Registro_Venta" id="link_reg_ventas">
+              <h4 style={{color:"#000000", textDecoration: "none" }}>Registrar venta</h4>
+              <Link style={{color:"#000000", textDecoration: "none" }} to="/Registro_Venta" id="link_reg_ventas">
                 Ingrese aquí
               </Link>
             </div>
           </div>
           <div className="carousel-item">
-            <img
+            <img style={{}}
               src={img3}
               className="d-block w-100"
               id="img_carru_4"
               alt="..."
             />
             <div className="carousel-caption d-none d-md-block">
-              <h4 style={{ color: "#ffffff" }}>Registrar producto</h4>
-              <Link to="/Registro_Productos" id="link_reg_pro">
+              <h4 style={{color:"#FFFFFF", textDecoration: "none"}}>Registrar producto</h4>
+              <Link style={{color:"#FFFFFF", textDecoration: "none"}} to="/Registro_Productos" id="link_reg_pro">
                 Ingrese aquí
               </Link>
             </div>
@@ -77,6 +78,7 @@ export default function inicio() {
           <span className="visually-hidden">Next</span>
         </button>
       </div>
+      <Footer/> 
     </>
   );
 }

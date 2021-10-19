@@ -1,11 +1,26 @@
 /* Suerte soldados... */
 @import url("fontawesome/css/all.css");
 
+*{
+    font-family: 'Krub', sans-serif;  
+}
 .g-signin{
     display: flex !important;
     position: flex;
     align-items: center;
     margin: 0 auto;   
+}
+.footer{
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    clear: booth;
+    background: #3a0652c7;
+    text-align: center;
+    color: #fff;
+}
+#menu_principal a:hover{
+    border-bottom: 1px solid;
 }
 /*
 Alejandro
@@ -21,14 +36,4 @@ Botón usuario
 #a-icono_usuario{
     color: #fff;
     font-size: 23px;
-}
-.footer{
-    position: relative;
-    margin-top: -10px;
-    width: 100%;
-    padding: 10px;
-    clear: booth;
-    background: #3a0652c7;
-    text-align: center;
-    color: #fff;
 }
