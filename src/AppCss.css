@@ -1,1 +1,8 @@
 /* Suerte soldados... */
+
+.g-signin{
+    display: flex !important;
+    position: flex;
+    align-items: center;
+    margin: 0 auto;   
+}
