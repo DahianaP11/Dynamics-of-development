@@ -13,18 +13,17 @@ function App() {
   return (
     <div className="App">
       <Router>
-          <NavBar />
-          <Switch>
-            <Route path="/" exact component={Inicio}/>
-            <Route path="/Registro_Venta" exact component={RegVentas}/>
-            <Route path="/Maestro_Ventas" exact component={MaestroVentas}/>
-            <Route path="/Registro_Productos" exact component={RegProductos}/>
-            <Route path="/Maestro_Productos" exact component={MaestroProductos}/>
-            <Route path="/Maestro_Usuario" exact component={MaestroUsuario}/>
-          </Switch>
-          <Footer/>
+        <NavBar />
+        <Switch>
+          <Route path="/" exact component={Inicio} />
+          <Route path="/Registro_Venta" exact component={RegVentas} />
+          <Route path="/Maestro_Ventas" exact component={MaestroVentas} />
+          <Route path="/Registro_Productos" exact component={RegProductos} />
+          <Route path="/Maestro_Productos" exact component={MaestroProductos} />
+          <Route path="/Maestro_Usuario" exact component={MaestroUsuario} />
+        </Switch>
+        <Footer />
       </Router>
-
     </div>
   );
 }

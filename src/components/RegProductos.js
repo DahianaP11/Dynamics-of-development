@@ -1,5 +1,6 @@
 import { useRef, useState } from "react";
 import MakeID from "./MakeID";
+import "../AppCss.css";
 
 export default function RegProductos() {
   const [form, setForm] = useState({});
@@ -20,14 +21,14 @@ export default function RegProductos() {
       <title>Registro de Productos</title>
       {/* Titulo formulario y tabla*/}
       <div className="container-fluid">
-        <h1 className="display-4" id="title">
+        <h1 className="display-4" id="c-title">
           REGISTRO DE PRODUCTOS
         </h1>
         <br />
         <br />
         <div className="row">
           <div className="col-6">
-            <form id="formulario">
+            <form id="c-formulario">
               <div className="form-group row">
                 <label
                   htmlFor="identificador"
@@ -39,7 +40,7 @@ export default function RegProductos() {
                   <input
                     type="text"
                     className="form-control input"
-                    id="identificadorP"
+                    id="c-identificadorP"
                     ref={refIdentificadorP}
                     value={MakeID()}
                     readOnly
@@ -58,7 +59,7 @@ export default function RegProductos() {
                   <input
                     type="text"
                     className="form-control"
-                    id="descripcion"
+                    id="c-descripcion"
                     placeholder="Descripción"
                     name="descripcion"
                     value={form.name}
@@ -75,7 +76,7 @@ export default function RegProductos() {
                   <input
                     type="input"
                     className="form-control"
-                    id="vunitario"
+                    id="c-vunitario"
                     placeholder="Valor unitario"
                     name="vunitario"
                     value={form.name}
@@ -92,7 +93,7 @@ export default function RegProductos() {
                       className="form-check-input"
                       type="radio"
                       name="Disponibilidad"
-                      id="flexRadioDefault1"
+                      id="c-flexRadioDefault1"
                       value="disponible"
                       onChange={handleChange}
                     />
@@ -108,7 +109,7 @@ export default function RegProductos() {
                       className="form-check-input"
                       type="radio"
                       name="Disponibilidad"
-                      id="flexRadioDefault2"
+                      id="c-flexRadioDefault2"
                       value="nodisponible"
                       onChange={handleChange}
                     />
@@ -127,13 +128,13 @@ export default function RegProductos() {
                   <button
                     type="submit"
                     className="btn btn-space"
-                    id="Registrar"
+                    id="c-Registrar"
                     ref={refRegistrar}
                     onClick={MuestraMensaje}
                   >
                     Registrar producto
                   </button>
-                  <button type="reset" className="btn btn-space" id="Borrar">
+                  <button type="reset" className="btn btn-space" id="c-Borrar">
                     Borrar datos
                   </button>
                 </div>
@@ -145,7 +146,7 @@ export default function RegProductos() {
             <center>
               <p className="h2">Ultimos productos registrados</p>
             </center>
-            <table className="table table-responsive" id="Table">
+            <table className="table table-responsive" id="c-Table">
               <thead>
                 <tr>
                   <th scope="col">#</th>
