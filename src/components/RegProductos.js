@@ -146,7 +146,10 @@ export default function RegProductos() {
             <center>
               <p className="h2">Ultimos productos registrados</p>
             </center>
-            <table className="table table-responsive" id="c-Table">
+            <table
+              className="table table-striped table-hover tabla"
+              id="c-Table"
+            >
               <thead>
                 <tr>
                   <th scope="col">#</th>
