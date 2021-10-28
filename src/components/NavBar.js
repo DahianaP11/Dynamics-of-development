@@ -35,7 +35,7 @@ export default function NavBar() {
       {!logins ? (
         <>
           <nav
-            className="navbar navbar-dark navbar-expand-md pb-0 "
+            className="navbar navbar-dark navbar-expand-md pb-0 border"
             style={{ backgroundColor: "#3a0652c7" }}
           >
             <div className="container row  d-flex justify-content-md-between">

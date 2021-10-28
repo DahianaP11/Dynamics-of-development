@@ -27,7 +27,7 @@ export default function MaestroVentas() {
               aria-label="Search"
             />
             <button
-              className="btn btn-outline-primary boton_buscar"
+              className="btn btn-outline-primary" id="d-boton_buscar"
               type="submit"
             >
               Buscar

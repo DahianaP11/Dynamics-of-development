@@ -22,6 +22,9 @@
 #menu_principal a:hover {
   border-bottom: 1px solid;
 }
+#menu_principal {
+  font-size: 0.83rem;
+}
 /*
 Alejandro
 Botón usuario
@@ -69,3 +72,15 @@ Botón usuario
   width: 240px;
   margin-right: 5px;
 }
+
+
+
+
+
+
+/* Dahiana */
+
+/* Botón buscar
+#d-boton_buscar {
+
+} */
