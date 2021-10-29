@@ -1,0 +1,81 @@
+/* Suerte soldados... */
+@import url("fontawesome/css/all.css");
+
+* {
+  font-family: "Krub", sans-serif;
+}
+.g-signin {
+  display: flex !important;
+  position: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+.footer {
+  position: relative;
+  width: 100%;
+  padding: 10px;
+  clear: booth;
+  background: #3a0652c7;
+  text-align: center;
+  color: #fff;
+}
+#menu_principal a:hover {
+  border-bottom: 1px solid;
+}
+#menu_principal {
+  font-size: 0.83rem;
+}
+/*
+Alejandro
+Botón usuario
+*/
+.a-menu_usuario,
+.btn-link:visited {
+  text-decoration: none;
+  color: #fff;
+}
+.a-menu_usuario,
+.btn-link:hover {
+  color: rgb(255, 255, 255);
+}
+#a-icono_usuario {
+  color: #fff;
+  font-size: 23px;
+}
+
+/* Carlos */
+#c-Registrar {
+  background: #3a0652c7;
+  color: #fff;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+#c-Borrar {
+  background: #3a0652c7;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+#c-title {
+  font-size: 35px;
+  text-align: center;
+}
+
+#c-vunitario {
+  width: 140px;
+  margin-right: 5px;
+  height: 40px;
+}
+
+#c-descripcion {
+  width: 240px;
+  margin-right: 5px;
+}
+
+/* Dahiana */
+
+/* Botón buscar
+#d-boton_buscar {
+
+} */
