@@ -38,22 +38,35 @@ export default function inicio() {
               alt="..."
             />
             <div className="carousel-caption d-none d-md-block">
-              <h4 style={{color:"#000000", textDecoration: "none" }}>Registrar venta</h4>
-              <Link style={{color:"#000000", textDecoration: "none" }} to="/Registro_Venta" id="link_reg_ventas">
+              <h4 style={{ color: "#000000", textDecoration: "none" }}>
+                Registrar venta
+              </h4>
+              <Link
+                style={{ color: "#000000", textDecoration: "none" }}
+                to="/Registro_Venta"
+                id="link_reg_ventas"
+              >
                 Ingrese aquí
               </Link>
             </div>
           </div>
           <div className="carousel-item">
-            <img style={{}}
+            <img
+              style={{}}
               src={img3}
               className="d-block w-100"
               id="img_carru_4"
               alt="..."
             />
             <div className="carousel-caption d-none d-md-block">
-              <h4 style={{color:"#FFFFFF", textDecoration: "none"}}>Registrar producto</h4>
-              <Link style={{color:"#FFFFFF", textDecoration: "none"}} to="/Registro_Productos" id="link_reg_pro">
+              <h4 style={{ color: "#FFFFFF", textDecoration: "none" }}>
+                Registrar producto
+              </h4>
+              <Link
+                style={{ color: "#FFFFFF", textDecoration: "none" }}
+                to="/Registro_Productos"
+                id="link_reg_pro"
+              >
                 Ingrese aquí
               </Link>
             </div>
