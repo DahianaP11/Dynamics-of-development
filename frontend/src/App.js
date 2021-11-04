@@ -4,7 +4,7 @@ import MaestroProductos from "./components/MaestroProductos";
 import MaestroUsuario from "./components/MaestroUsuario";
 import MaestroVentas from "./components/MaestroVentas";
 import RegProductos from "./components/RegProductos";
-import RegVentas from "./components/RegVentas";
+import RegVentas from "./pages/RegVentas";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Foooter";
 import "./AppCss.css";
