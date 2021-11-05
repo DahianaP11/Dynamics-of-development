@@ -1,5 +1,6 @@
 import { useState, useRef } from "react";
 import MakeID from "./MakeID";
+import "../AppCss.css";
 
 export default function RegVentas() {
   const [form, setForm] = useState({});
@@ -10,6 +11,7 @@ export default function RegVentas() {
     refIDCliente = useRef(),
     refNCliente = useRef(),
     refVendedor = useRef();
+
   const handleChange = (e) => {
     setForm({
       ...form,
@@ -27,7 +29,8 @@ export default function RegVentas() {
   }
   return (
     <>
-      <title> Registro de Ventas </title> {/ * Titulo formulario y tabla * /}{" "}
+      <title> Registro de Ventas </title> 
+      {/* Titulo formulario y tabla*/}
       <div className="container-fluid">
         <h1 className="display-4" id="title">
           {" "}
