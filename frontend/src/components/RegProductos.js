@@ -19,7 +19,7 @@ export default function RegProductos() {
   return (
     <>
       <title>Registro de Productos</title>
-      {/* Titulo formulario y tabla*/}
+      {/* Titulo formulario y tabla por mejorar*/}
       <div className="container-fluid">
         <h1 className="display-4" id="c-title">
           REGISTRO DE PRODUCTOS
