@@ -79,3 +79,127 @@ Botón usuario
 #d-boton_buscar {
 
 } */
+
+/* Gabriela */
+
+/*Ya esto es el body*/
+#G-heading { 
+	color: #000000;
+	font-family: Krub;
+	font-size:  35px;
+}
+/*barra de navegación*/
+.G-form-control{
+  font-size: 13px;
+  color:#292929;
+  background : #FFFFFF;
+  position : absolute ;
+  left : 120px;
+  top : 240px;
+  width : 316px;
+  height : 35px;
+  border-radius : 10px;
+  -moz-border-radius : 10px;
+  -webkit-border-radius : 10px;
+ }
+/*botón buscar de la barra*/
+.G-btn-outline-success{
+  font-size: 14px;
+  color:#ffffff;
+  border-color: rgb(25, 0, 66);
+  background : #4B3869;
+  position : absolute ;
+  left : 460px;
+  top : 240px;
+  width : 80px;
+  height : 35px;
+  border-radius : 10px;
+}
+.G-btn-outline-success:hover  {
+  background-color: #b0c2fb;
+  color: rgb(0, 0, 0);
+}
+
+.Ga-btn-primary{
+  background : #4B3869;
+  color: aliceblue;
+  font-size: 15px;
+  position : absolute ;
+  left : 120px;
+  top : 575px;
+  width : 150px;
+  height : 35px;
+  border-radius : 10px;
+}
+.Ga-btn-primary:hover{
+  background-color: #b0c2fb;
+  color: rgb(0, 0, 0);
+}
+
+.Gab-btn-primary{
+  background : #4B3869;
+  color: aliceblue;
+  font-size: 15px;
+  position : absolute ;
+  left : 320px;
+  top : 575px;
+  width : 170px;
+  height : 35px;
+  border-radius : 10px;
+}
+.Gab-btn-primary:hover{
+  background-color: #b0c2fb;
+  color: rgb(0, 0, 0);
+}
+
+.G-ordenar {
+  background : #4B3869;
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  position : absolute ;
+  left : 1300px;
+  top : 240px;
+  width : 141px;
+  height : 35px;
+  border-radius : 10px;
+  border-color: #000000;
+  -moz-border-radius : 10px;
+  -webkit-border-radius : 10px;
+}
+
+.G-ordenar:hover{
+   background: #ffffff;
+   color: #000000;
+}
+.G-ordenar.op {
+   background: #ffffff;
+   color: #000000;
+}
+.G-table{
+  color: rgb(0, 0, 0);
+  position : absolute ;
+  left : 65px;
+  top : 270px;
+  width : 1320px;
+  font-size: 15px;
+}
+
+.G-btn-primary{
+  background : #4B3869;
+  color: aliceblue;
+  font-size: 15px;
+}
+.G-btn-secondary{
+  background : #636262;
+  color: aliceblue;
+  font-size: 15px;
+}
+.G-btn-primary:hover {
+  background-color: #b0c2fb;
+  color: rgb(0, 0, 0);
+}
+.G-btn-secondary:hover {
+  background-color: #b0c2fb;
+  color: rgb(0, 0, 0);
+}
+
