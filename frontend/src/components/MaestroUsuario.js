@@ -20,9 +20,9 @@ export default function MaestroUsuario() {
         </button>
       </form>
       {/*Boton ordenar por*/}
-      <select name="ordenar" className="G-ordenar">
+      <select name="ordenar" className="G-ordenar m-1">
         <option selected disabled>
-          Odenar por
+          Ordenar por
         </option>
         <option value="cc" className="op">
           ID
@@ -43,8 +43,8 @@ export default function MaestroUsuario() {
       <br />
       {/*<button name="button" id="button2">Odenar por</button>*/}
       {/*Tabla */}
-      <div className="col-11 m-5 border G-table">
-        <table class="table table-striped">
+      <div className="col-11 m-2 border G-table">
+        <table class="G-table table table-striped">
           <thead>
             <tr>
               <th scope="col">#ID</th>

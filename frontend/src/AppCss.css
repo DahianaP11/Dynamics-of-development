@@ -11,10 +11,8 @@
   margin: 0 auto;
 }
 .footer {
-  position: relative;
   width: 100%;
-  padding: 10px;
-  clear: booth;
+  padding: 1.5%;
   background: #3a0652c7;
   text-align: center;
   color: #fff;
@@ -89,18 +87,24 @@ Botón usuario
 	font-size:  35px;
 }
 /*barra de navegación*/
+.G-table{
+  position: static!important;
+  margin-bottom: unset!important;
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+}
+.Ga-btn-primary{
+  position: unset!important;
+}
 .G-form-control{
   font-size: 13px;
   color:#292929;
   background : #FFFFFF;
-  position : absolute ;
-  left : 120px;
-  top : 240px;
-  width : 316px;
-  height : 35px;
-  border-radius : 10px;
-  -moz-border-radius : 10px;
-  -webkit-border-radius : 10px;
+  width : 20%;
+  border-radius : .5rem;
+  margin-left: 1.5%;
+  -moz-border-radius : .5rem;
+  -webkit-border-radius : .5rem;
  }
 /*botón buscar de la barra*/
 .G-btn-outline-success{
@@ -108,12 +112,7 @@ Botón usuario
   color:#ffffff;
   border-color: rgb(25, 0, 66);
   background : #4B3869;
-  position : absolute ;
-  left : 460px;
-  top : 240px;
-  width : 80px;
-  height : 35px;
-  border-radius : 10px;
+  border-radius : .5rem;
 }
 .G-btn-outline-success:hover  {
   background-color: #b0c2fb;
@@ -124,12 +123,10 @@ Botón usuario
   background : #4B3869;
   color: aliceblue;
   font-size: 15px;
-  position : absolute ;
-  left : 120px;
-  top : 575px;
-  width : 150px;
-  height : 35px;
-  border-radius : 10px;
+  border-radius : .5rem;
+  margin-bottom: 1.5%;
+  margin-top: 1.5%;
+  margin-left: 1.5%;
 }
 .Ga-btn-primary:hover{
   background-color: #b0c2fb;
@@ -140,12 +137,7 @@ Botón usuario
   background : #4B3869;
   color: aliceblue;
   font-size: 15px;
-  position : absolute ;
-  left : 320px;
-  top : 575px;
-  width : 170px;
-  height : 35px;
-  border-radius : 10px;
+  border-radius : .5rem;
 }
 .Gab-btn-primary:hover{
   background-color: #b0c2fb;
@@ -156,15 +148,12 @@ Botón usuario
   background : #4B3869;
   color: rgb(255, 255, 255);
   font-size: 14px;
-  position : absolute ;
-  left : 1300px;
-  top : 240px;
-  width : 141px;
-  height : 35px;
-  border-radius : 10px;
+  padding: .2rem;
+  border-radius : .5rem;
   border-color: #000000;
-  -moz-border-radius : 10px;
-  -webkit-border-radius : 10px;
+  margin-left: 1.5%!important;
+  -moz-border-radius : .5rem;
+  -webkit-border-radius : .5rem;
 }
 
 .G-ordenar:hover{
@@ -175,15 +164,6 @@ Botón usuario
    background: #ffffff;
    color: #000000;
 }
-.G-table{
-  color: rgb(0, 0, 0);
-  position : absolute ;
-  left : 65px;
-  top : 270px;
-  width : 1320px;
-  font-size: 15px;
-}
-
 .G-btn-primary{
   background : #4B3869;
   color: aliceblue;
@@ -202,4 +182,3 @@ Botón usuario
   background-color: #b0c2fb;
   color: rgb(0, 0, 0);
 }
-

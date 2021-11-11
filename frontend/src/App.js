@@ -22,8 +22,8 @@ function App() {
           <Route path="/Maestro_Productos" exact component={MaestroProductos} />
           <Route path="/Maestro_Usuario" exact component={MaestroUsuario} />
         </Switch>
-        <Footer />
       </Router>
+      <Footer />
     </div>
   );
 }
